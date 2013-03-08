@@ -1,0 +1,1664 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <database name="noteconcept">
+        <!-- Table country -->
+        <table name="country">
+            <column name="id">1</column>
+            <pays>France</pays>
+            <column name="name_country_uppercase">FRANCE</column>
+            <column name="country_slug">france</column>
+            <column name="code">fr</column>
+        </table>
+        <table name="country">
+            <column name="id">2</column>
+            <pays>Afghanistan</pays>
+            <column name="name_country_uppercase">AFGHANISTAN</column>
+            <column name="country_slug">afghanistan</column>
+            <column name="code">af</column>
+        </table>
+        <table name="country">
+            <column name="id">3</column>
+            <pays>Afrique du sud</pays>
+            <column name="name_country_uppercase">AFRIQUE DU SUD</column>
+            <column name="country_slug">afrique-du-sud</column>
+            <column name="code">za</column>
+        </table>
+        <table name="country">
+            <column name="id">4</column>
+            <pays>Albanie</pays>
+            <column name="name_country_uppercase">ALBANIE</column>
+            <column name="country_slug">albanie</column>
+            <column name="code">al</column>
+        </table>
+        <table name="country">
+            <column name="id">5</column>
+            <pays>Algérie</pays>
+            <column name="name_country_uppercase">ALGÉRIE</column>
+            <column name="country_slug">algerie</column>
+            <column name="code">dz</column>
+        </table>
+        <table name="country">
+            <column name="id">6</column>
+            <pays>Allemagne</pays>
+            <column name="name_country_uppercase">ALLEMAGNE</column>
+            <column name="country_slug">allemagne</column>
+            <column name="code">de</column>
+        </table>
+        <table name="country">
+            <column name="id">7</column>
+            <pays>Arabie saoudite</pays>
+            <column name="name_country_uppercase">ARABIE SAOUDITE</column>
+            <column name="country_slug">arabie-saoudite</column>
+            <column name="code">sa</column>
+        </table>
+        <table name="country">
+            <column name="id">8</column>
+            <pays>Argentine</pays>
+            <column name="name_country_uppercase">ARGENTINE</column>
+            <column name="country_slug">argentine</column>
+            <column name="code">ar</column>
+        </table>
+        <table name="country">
+            <column name="id">9</column>
+            <pays>Australie</pays>
+            <column name="name_country_uppercase">AUSTRALIE</column>
+            <column name="country_slug">australie</column>
+            <column name="code">au</column>
+        </table>
+        <table name="country">
+            <column name="id">10</column>
+            <pays>Autriche</pays>
+            <column name="name_country_uppercase">AUTRICHE</column>
+            <column name="country_slug">autriche</column>
+            <column name="code">at</column>
+        </table>
+        <table name="country">
+            <column name="id">11</column>
+            <pays>Belgique</pays>
+            <column name="name_country_uppercase">BELGIQUE</column>
+            <column name="country_slug">belgique</column>
+            <column name="code">be</column>
+        </table>
+        <table name="country">
+            <column name="id">12</column>
+            <pays>Brésil</pays>
+            <column name="name_country_uppercase">BRÉSIL</column>
+            <column name="country_slug">bresil</column>
+            <column name="code">br</column>
+        </table>
+        <table name="country">
+            <column name="id">13</column>
+            <pays>Bulgarie</pays>
+            <column name="name_country_uppercase">BULGARIE</column>
+            <column name="country_slug">bulgarie</column>
+            <column name="code">bg</column>
+        </table>
+        <table name="country">
+            <column name="id">14</column>
+            <pays>Canada</pays>
+            <column name="name_country_uppercase">CANADA</column>
+            <column name="country_slug">canada</column>
+            <column name="code">ca</column>
+        </table>
+        <table name="country">
+            <column name="id">15</column>
+            <pays>Chili</pays>
+            <column name="name_country_uppercase">CHILI</column>
+            <column name="country_slug">chili</column>
+            <column name="code">cl</column>
+        </table>
+        <table name="country">
+            <column name="id">16</column>
+            <pays>Chine (Rép. pop.)</pays>
+            <column name="name_country_uppercase">CHINE (RÉP. POP.)</column>
+            <column name="country_slug">chine-rep-pop</column>
+            <column name="code">cn</column>
+        </table>
+        <table name="country">
+            <column name="id">17</column>
+            <pays>Colombie</pays>
+            <column name="name_country_uppercase">COLOMBIE</column>
+            <column name="country_slug">colombie</column>
+            <column name="code">co</column>
+        </table>
+        <table name="country">
+            <column name="id">18</column>
+            <pays>Corée, Sud</pays>
+            <column name="name_country_uppercase">CORÉE, SUD</column>
+            <column name="country_slug">coree-sud</column>
+            <column name="code">kr</column>
+        </table>
+        <table name="country">
+            <column name="id">19</column>
+            <pays>Costa Rica</pays>
+            <column name="name_country_uppercase">COSTA RICA</column>
+            <column name="country_slug">costa-rica</column>
+            <column name="code">cr</column>
+        </table>
+        <table name="country">
+            <column name="id">20</column>
+            <pays>Croatie</pays>
+            <column name="name_country_uppercase">CROATIE</column>
+            <column name="country_slug">croatie</column>
+            <column name="code">hr</column>
+        </table>
+        <table name="country">
+            <column name="id">21</column>
+            <pays>Danemark</pays>
+            <column name="name_country_uppercase">DANEMARK</column>
+            <column name="country_slug">danemark</column>
+            <column name="code">dk</column>
+        </table>
+        <table name="country">
+            <column name="id">22</column>
+            <pays>Égypte</pays>
+            <column name="name_country_uppercase">ÉGYPTE</column>
+            <column name="country_slug">egypte</column>
+            <column name="code">eg</column>
+        </table>
+        <table name="country">
+            <column name="id">23</column>
+            <pays>Émirats arabes unis</pays>
+            <column name="name_country_uppercase">ÉMIRATS ARABES UNIS</column>
+            <column name="country_slug">emirats-arabes-unis</column>
+            <column name="code">ae</column>
+        </table>
+        <table name="country">
+            <column name="id">24</column>
+            <pays>Équateur</pays>
+            <column name="name_country_uppercase">ÉQUATEUR</column>
+            <column name="country_slug">equateur</column>
+            <column name="code">ec</column>
+        </table>
+        <table name="country">
+            <column name="id">25</column>
+            <pays>États-Unis</pays>
+            <column name="name_country_uppercase">ÉTATS-UNIS</column>
+            <column name="country_slug">etats-unis</column>
+            <column name="code">us</column>
+        </table>
+        <table name="country">
+            <column name="id">26</column>
+            <pays>El Salvador</pays>
+            <column name="name_country_uppercase">EL SALVADOR</column>
+            <column name="country_slug">el-salvador</column>
+            <column name="code">sv</column>
+        </table>
+        <table name="country">
+            <column name="id">27</column>
+            <pays>Espagne</pays>
+            <column name="name_country_uppercase">ESPAGNE</column>
+            <column name="country_slug">espagne</column>
+            <column name="code">es</column>
+        </table>
+        <table name="country">
+            <column name="id">28</column>
+            <pays>Finlande</pays>
+            <column name="name_country_uppercase">FINLANDE</column>
+            <column name="country_slug">finlande</column>
+            <column name="code">fi</column>
+        </table>
+        <table name="country">
+            <column name="id">29</column>
+            <pays>Grèce</pays>
+            <column name="name_country_uppercase">GRÈCE</column>
+            <column name="country_slug">grece</column>
+            <column name="code">gr</column>
+        </table>
+        <table name="country">
+            <column name="id">30</column>
+            <pays>Hong Kong</pays>
+            <column name="name_country_uppercase">HONG KONG</column>
+            <column name="country_slug">hong-kong</column>
+            <column name="code">hk</column>
+        </table>
+        <table name="country">
+            <column name="id">31</column>
+            <pays>Hongrie</pays>
+            <column name="name_country_uppercase">HONGRIE</column>
+            <column name="country_slug">hongrie</column>
+            <column name="code">hu</column>
+        </table>
+        <table name="country">
+            <column name="id">32</column>
+            <pays>Inde</pays>
+            <column name="name_country_uppercase">INDE</column>
+            <column name="country_slug">inde</column>
+            <column name="code">in</column>
+        </table>
+        <table name="country">
+            <column name="id">33</column>
+            <pays>Indonésie</pays>
+            <column name="name_country_uppercase">INDONÉSIE</column>
+            <column name="country_slug">indonesie</column>
+            <column name="code">id</column>
+        </table>
+        <table name="country">
+            <column name="id">34</column>
+            <pays>Irlande</pays>
+            <column name="name_country_uppercase">IRLANDE</column>
+            <column name="country_slug">irlande</column>
+            <column name="code">ie</column>
+        </table>
+        <table name="country">
+            <column name="id">35</column>
+            <pays>Israël</pays>
+            <column name="name_country_uppercase">ISRAËL</column>
+            <column name="country_slug">israel</column>
+            <column name="code">il</column>
+        </table>
+        <table name="country">
+            <column name="id">36</column>
+            <pays>Italie</pays>
+            <column name="name_country_uppercase">ITALIE</column>
+            <column name="country_slug">italie</column>
+            <column name="code">it</column>
+        </table>
+        <table name="country">
+            <column name="id">37</column>
+            <pays>Japon</pays>
+            <column name="name_country_uppercase">JAPON</column>
+            <column name="country_slug">japon</column>
+            <column name="code">jp</column>
+        </table>
+        <table name="country">
+            <column name="id">38</column>
+            <pays>Jordanie</pays>
+            <column name="name_country_uppercase">JORDANIE</column>
+            <column name="country_slug">jordanie</column>
+            <column name="code">jo</column>
+        </table>
+        <table name="country">
+            <column name="id">39</column>
+            <pays>Liban</pays>
+            <column name="name_country_uppercase">LIBAN</column>
+            <column name="country_slug">liban</column>
+            <column name="code">lb</column>
+        </table>
+        <table name="country">
+            <column name="id">40</column>
+            <pays>Malaisie</pays>
+            <column name="name_country_uppercase">MALAISIE</column>
+            <column name="country_slug">malaisie</column>
+            <column name="code">my</column>
+        </table>
+        <table name="country">
+            <column name="id">41</column>
+            <pays>Maroc</pays>
+            <column name="name_country_uppercase">MAROC</column>
+            <column name="country_slug">maroc</column>
+            <column name="code">ma</column>
+        </table>
+        <table name="country">
+            <column name="id">42</column>
+            <pays>Mexique</pays>
+            <column name="name_country_uppercase">MEXIQUE</column>
+            <column name="country_slug">mexique</column>
+            <column name="code">mx</column>
+        </table>
+        <table name="country">
+            <column name="id">43</column>
+            <pays>Norvège</pays>
+            <column name="name_country_uppercase">NORVÈGE</column>
+            <column name="country_slug">norvege</column>
+            <column name="code">no</column>
+        </table>
+        <table name="country">
+            <column name="id">44</column>
+            <pays>Nouvelle-Zélande</pays>
+            <column name="name_country_uppercase">NOUVELLE-ZÉLANDE</column>
+            <column name="country_slug">nouvelle-zelande</column>
+            <column name="code">nz</column>
+        </table>
+        <table name="country">
+            <column name="id">45</column>
+            <pays>Pérou</pays>
+            <column name="name_country_uppercase">PÉROU</column>
+            <column name="country_slug">perou</column>
+            <column name="code">pe</column>
+        </table>
+        <table name="country">
+            <column name="id">46</column>
+            <pays>Pakistan</pays>
+            <column name="name_country_uppercase">PAKISTAN</column>
+            <column name="country_slug">pakistan</column>
+            <column name="code">pk</column>
+        </table>
+        <table name="country">
+            <column name="id">47</column>
+            <pays>Pays-Bas</pays>
+            <column name="name_country_uppercase">PAYS-BAS</column>
+            <column name="country_slug">pays-bas</column>
+            <column name="code">nl</column>
+        </table>
+        <table name="country">
+            <column name="id">48</column>
+            <pays>Philippines</pays>
+            <column name="name_country_uppercase">PHILIPPINES</column>
+            <column name="country_slug">philippines</column>
+            <column name="code">ph</column>
+        </table>
+        <table name="country">
+            <column name="id">49</column>
+            <pays>Pologne</pays>
+            <column name="name_country_uppercase">POLOGNE</column>
+            <column name="country_slug">pologne</column>
+            <column name="code">pl</column>
+        </table>
+        <table name="country">
+            <column name="id">50</column>
+            <pays>Porto Rico</pays>
+            <column name="name_country_uppercase">PORTO RICO</column>
+            <column name="country_slug">porto-rico</column>
+            <column name="code">pr</column>
+        </table>
+        <table name="country">
+            <column name="id">51</column>
+            <pays>Portugal</pays>
+            <column name="name_country_uppercase">PORTUGAL</column>
+            <column name="country_slug">portugal</column>
+            <column name="code">pt</column>
+        </table>
+        <table name="country">
+            <column name="id">52</column>
+            <pays>République tchèque</pays>
+            <column name="name_country_uppercase">RÉPUBLIQUE TCHÈQUE</column>
+            <column name="country_slug">republique-tcheque</column>
+            <column name="code">cz</column>
+        </table>
+        <table name="country">
+            <column name="id">53</column>
+            <pays>Roumanie</pays>
+            <column name="name_country_uppercase">ROUMANIE</column>
+            <column name="country_slug">roumanie</column>
+            <column name="code">ro</column>
+        </table>
+        <table name="country">
+            <column name="id">54</column>
+            <pays>Royaume-Uni</pays>
+            <column name="name_country_uppercase">ROYAUME-UNI</column>
+            <column name="country_slug">royaume-uni</column>
+            <column name="code">uk</column>
+        </table>
+        <table name="country">
+            <column name="id">55</column>
+            <pays>Russie</pays>
+            <column name="name_country_uppercase">RUSSIE</column>
+            <column name="country_slug">russie</column>
+            <column name="code">ru</column>
+        </table>
+        <table name="country">
+            <column name="id">56</column>
+            <pays>Singapour</pays>
+            <column name="name_country_uppercase">SINGAPOUR</column>
+            <column name="country_slug">singapour</column>
+            <column name="code">sg</column>
+        </table>
+        <table name="country">
+            <column name="id">57</column>
+            <pays>Suède</pays>
+            <column name="name_country_uppercase">SUÈDE</column>
+            <column name="country_slug">suede</column>
+            <column name="code">se</column>
+        </table>
+        <table name="country">
+            <column name="id">58</column>
+            <pays>Suisse</pays>
+            <column name="name_country_uppercase">SUISSE</column>
+            <column name="country_slug">suisse</column>
+            <column name="code">ch</column>
+        </table>
+        <table name="country">
+            <column name="id">59</column>
+            <pays>Taiwan</pays>
+            <column name="name_country_uppercase">TAIWAN</column>
+            <column name="country_slug">taiwan</column>
+            <column name="code">tw</column>
+        </table>
+        <table name="country">
+            <column name="id">60</column>
+            <pays>Thailande</pays>
+            <column name="name_country_uppercase">THAILANDE</column>
+            <column name="country_slug">thailande</column>
+            <column name="code">th</column>
+        </table>
+        <table name="country">
+            <column name="id">61</column>
+            <pays>Turquie</pays>
+            <column name="name_country_uppercase">TURQUIE</column>
+            <column name="country_slug">turquie</column>
+            <column name="code">tr</column>
+        </table>
+        <table name="country">
+            <column name="id">62</column>
+            <pays>Ukraine</pays>
+            <column name="name_country_uppercase">UKRAINE</column>
+            <column name="country_slug">ukraine</column>
+            <column name="code">ua</column>
+        </table>
+        <table name="country">
+            <column name="id">63</column>
+            <pays>Venezuela</pays>
+            <column name="name_country_uppercase">VENEZUELA</column>
+            <column name="country_slug">venezuela</column>
+            <column name="code">ve</column>
+        </table>
+        <table name="country">
+            <column name="id">64</column>
+            <pays>Yougoslavie</pays>
+            <column name="name_country_uppercase">YOUGOSLAVIE</column>
+            <column name="country_slug">yougoslavie</column>
+            <column name="code">yu</column>
+        </table>
+        <table name="country">
+            <column name="id">65</column>
+            <pays>Samoa</pays>
+            <column name="name_country_uppercase">SAMOA</column>
+            <column name="country_slug">samoa</column>
+            <column name="code">as</column>
+        </table>
+        <table name="country">
+            <column name="id">66</column>
+            <pays>Andorre</pays>
+            <column name="name_country_uppercase">ANDORRE</column>
+            <column name="country_slug">andorre</column>
+            <column name="code">ad</column>
+        </table>
+        <table name="country">
+            <column name="id">67</column>
+            <pays>Angola</pays>
+            <column name="name_country_uppercase">ANGOLA</column>
+            <column name="country_slug">angola</column>
+            <column name="code">ao</column>
+        </table>
+        <table name="country">
+            <column name="id">68</column>
+            <pays>Anguilla</pays>
+            <column name="name_country_uppercase">ANGUILLA</column>
+            <column name="country_slug">anguilla</column>
+            <column name="code">ai</column>
+        </table>
+        <table name="country">
+            <column name="id">69</column>
+            <pays>Antarctique</pays>
+            <column name="name_country_uppercase">ANTARCTIQUE</column>
+            <column name="country_slug">antarctique</column>
+            <column name="code">aq</column>
+        </table>
+        <table name="country">
+            <column name="id">70</column>
+            <pays>Antigua et Barbuda</pays>
+            <column name="name_country_uppercase">ANTIGUA ET BARBUDA</column>
+            <column name="country_slug">antigua-et-barbuda</column>
+            <column name="code">ag</column>
+        </table>
+        <table name="country">
+            <column name="id">71</column>
+            <pays>Arménie</pays>
+            <column name="name_country_uppercase">ARMÉNIE</column>
+            <column name="country_slug">armenie</column>
+            <column name="code">am</column>
+        </table>
+        <table name="country">
+            <column name="id">72</column>
+            <pays>Aruba</pays>
+            <column name="name_country_uppercase">ARUBA</column>
+            <column name="country_slug">aruba</column>
+            <column name="code">aw</column>
+        </table>
+        <table name="country">
+            <column name="id">73</column>
+            <pays>Azerbaïdjan</pays>
+            <column name="name_country_uppercase">AZERBAÏDJAN</column>
+            <column name="country_slug">azerbaidjan</column>
+            <column name="code">az</column>
+        </table>
+        <table name="country">
+            <column name="id">74</column>
+            <pays>Bahamas</pays>
+            <column name="name_country_uppercase">BAHAMAS</column>
+            <column name="country_slug">bahamas</column>
+            <column name="code">bs</column>
+        </table>
+        <table name="country">
+            <column name="id">75</column>
+            <pays>Bahrain</pays>
+            <column name="name_country_uppercase">BAHRAIN</column>
+            <column name="country_slug">bahrain</column>
+            <column name="code">bh</column>
+        </table>
+        <table name="country">
+            <column name="id">76</column>
+            <pays>Bangladesh</pays>
+            <column name="name_country_uppercase">BANGLADESH</column>
+            <column name="country_slug">bangladesh</column>
+            <column name="code">bd</column>
+        </table>
+        <table name="country">
+            <column name="id">77</column>
+            <pays>Biélorussie</pays>
+            <column name="name_country_uppercase">BIÉLORUSSIE</column>
+            <column name="country_slug">bielorussie</column>
+            <column name="code">by</column>
+        </table>
+        <table name="country">
+            <column name="id">78</column>
+            <pays>Belize</pays>
+            <column name="name_country_uppercase">BELIZE</column>
+            <column name="country_slug">belize</column>
+            <column name="code">bz</column>
+        </table>
+        <table name="country">
+            <column name="id">79</column>
+            <pays>Benin</pays>
+            <column name="name_country_uppercase">BENIN</column>
+            <column name="country_slug">benin</column>
+            <column name="code">bj</column>
+        </table>
+        <table name="country">
+            <column name="id">80</column>
+            <pays>Bermudes (Les)</pays>
+            <column name="name_country_uppercase">BERMUDES (LES)</column>
+            <column name="country_slug">bermudes-les</column>
+            <column name="code">bm</column>
+        </table>
+        <table name="country">
+            <column name="id">81</column>
+            <pays>Bhoutan</pays>
+            <column name="name_country_uppercase">BHOUTAN</column>
+            <column name="country_slug">bhoutan</column>
+            <column name="code">bt</column>
+        </table>
+        <table name="country">
+            <column name="id">82</column>
+            <pays>Bolivie</pays>
+            <column name="name_country_uppercase">BOLIVIE</column>
+            <column name="country_slug">bolivie</column>
+            <column name="code">bo</column>
+        </table>
+        <table name="country">
+            <column name="id">83</column>
+            <pays>Bosnie-Herzégovine</pays>
+            <column name="name_country_uppercase">BOSNIE-HERZÉGOVINE</column>
+            <column name="country_slug">bosnie-herzegovine</column>
+            <column name="code">ba</column>
+        </table>
+        <table name="country">
+            <column name="id">84</column>
+            <pays>Botswana</pays>
+            <column name="name_country_uppercase">BOTSWANA</column>
+            <column name="country_slug">botswana</column>
+            <column name="code">bw</column>
+        </table>
+        <table name="country">
+            <column name="id">85</column>
+            <pays>Bouvet (Îles)</pays>
+            <column name="name_country_uppercase">BOUVET (ÎLES)</column>
+            <column name="country_slug">bouvet-iles</column>
+            <column name="code">bv</column>
+        </table>
+        <table name="country">
+            <column name="id">86</column>
+            <pays>Territoire britannique de l'océan Indien</pays>
+            <column name="name_country_uppercase">TERRITOIRE BRITANNIQUE DE L'OCÉAN INDIEN</column>
+            <column name="country_slug">territoire-britannique-de-locean-indien</column>
+            <column name="code">io</column>
+        </table>
+        <table name="country">
+            <column name="id">87</column>
+            <pays>Vierges britanniques (Îles)</pays>
+            <column name="name_country_uppercase">VIERGES BRITANNIQUES (ÎLES)</column>
+            <column name="country_slug">vierges-britanniques-iles</column>
+            <column name="code">vg</column>
+        </table>
+        <table name="country">
+            <column name="id">88</column>
+            <pays>Brunei</pays>
+            <column name="name_country_uppercase">BRUNEI</column>
+            <column name="country_slug">brunei</column>
+            <column name="code">bn</column>
+        </table>
+        <table name="country">
+            <column name="id">89</column>
+            <pays>Burkina Faso</pays>
+            <column name="name_country_uppercase">BURKINA FASO</column>
+            <column name="country_slug">burkina-faso</column>
+            <column name="code">bf</column>
+        </table>
+        <table name="country">
+            <column name="id">90</column>
+            <pays>Burundi</pays>
+            <column name="name_country_uppercase">BURUNDI</column>
+            <column name="country_slug">burundi</column>
+            <column name="code">bi</column>
+        </table>
+        <table name="country">
+            <column name="id">91</column>
+            <pays>Cambodge</pays>
+            <column name="name_country_uppercase">CAMBODGE</column>
+            <column name="country_slug">cambodge</column>
+            <column name="code">kh</column>
+        </table>
+        <table name="country">
+            <column name="id">92</column>
+            <pays>Cameroun</pays>
+            <column name="name_country_uppercase">CAMEROUN</column>
+            <column name="country_slug">cameroun</column>
+            <column name="code">cm</column>
+        </table>
+        <table name="country">
+            <column name="id">93</column>
+            <pays>Cap Vert</pays>
+            <column name="name_country_uppercase">CAP VERT</column>
+            <column name="country_slug">cap-vert</column>
+            <column name="code">cv</column>
+        </table>
+        <table name="country">
+            <column name="id">94</column>
+            <pays>Cayman (Îles)</pays>
+            <column name="name_country_uppercase">CAYMAN (ÎLES)</column>
+            <column name="country_slug">cayman-iles</column>
+            <column name="code">ky</column>
+        </table>
+        <table name="country">
+            <column name="id">95</column>
+            <pays>République centrafricaine</pays>
+            <column name="name_country_uppercase">RÉPUBLIQUE CENTRAFRICAINE</column>
+            <column name="country_slug">republique-centrafricaine</column>
+            <column name="code">cf</column>
+        </table>
+        <table name="country">
+            <column name="id">96</column>
+            <pays>Tchad</pays>
+            <column name="name_country_uppercase">TCHAD</column>
+            <column name="country_slug">tchad</column>
+            <column name="code">td</column>
+        </table>
+        <table name="country">
+            <column name="id">97</column>
+            <pays>Christmas (Île)</pays>
+            <column name="name_country_uppercase">CHRISTMAS (ÎLE)</column>
+            <column name="country_slug">christmas-ile</column>
+            <column name="code">cx</column>
+        </table>
+        <table name="country">
+            <column name="id">98</column>
+            <pays>Cocos (Îles)</pays>
+            <column name="name_country_uppercase">COCOS (ÎLES)</column>
+            <column name="country_slug">cocos-iles</column>
+            <column name="code">cc</column>
+        </table>
+        <table name="country">
+            <column name="id">99</column>
+            <pays>Comores</pays>
+            <column name="name_country_uppercase">COMORES</column>
+            <column name="country_slug">comores</column>
+            <column name="code">km</column>
+        </table>
+        <table name="country">
+            <column name="id">100</column>
+            <pays>Rép. Dém. du Congo</pays>
+            <column name="name_country_uppercase">RÉP. DÉM. DU CONGO</column>
+            <column name="country_slug">rep-dem-du-congo</column>
+            <column name="code">cg</column>
+        </table>
+        <table name="country">
+            <column name="id">101</column>
+            <pays>Cook (Îles)</pays>
+            <column name="name_country_uppercase">COOK (ÎLES)</column>
+            <column name="country_slug">cook-iles</column>
+            <column name="code">ck</column>
+        </table>
+        <table name="country">
+            <column name="id">102</column>
+            <pays>Cuba</pays>
+            <column name="name_country_uppercase">CUBA</column>
+            <column name="country_slug">cuba</column>
+            <column name="code">cu</column>
+        </table>
+        <table name="country">
+            <column name="id">103</column>
+            <pays>Chypre</pays>
+            <column name="name_country_uppercase">CHYPRE</column>
+            <column name="country_slug">chypre</column>
+            <column name="code">cy</column>
+        </table>
+        <table name="country">
+            <column name="id">104</column>
+            <pays>Djibouti</pays>
+            <column name="name_country_uppercase">DJIBOUTI</column>
+            <column name="country_slug">djibouti</column>
+            <column name="code">dj</column>
+        </table>
+        <table name="country">
+            <column name="id">105</column>
+            <pays>Dominique</pays>
+            <column name="name_country_uppercase">DOMINIQUE</column>
+            <column name="country_slug">dominique</column>
+            <column name="code">dm</column>
+        </table>
+        <table name="country">
+            <column name="id">106</column>
+            <pays>République Dominicaine</pays>
+            <column name="name_country_uppercase">RÉPUBLIQUE DOMINICAINE</column>
+            <column name="country_slug">republique-dominicaine</column>
+            <column name="code">do</column>
+        </table>
+        <table name="country">
+            <column name="id">107</column>
+            <pays>Timor</pays>
+            <column name="name_country_uppercase">TIMOR</column>
+            <column name="country_slug">timor</column>
+            <column name="code">tp</column>
+        </table>
+        <table name="country">
+            <column name="id">108</column>
+            <pays>Guinée Equatoriale</pays>
+            <column name="name_country_uppercase">GUINÉE EQUATORIALE</column>
+            <column name="country_slug">guinee-equatoriale</column>
+            <column name="code">gq</column>
+        </table>
+        <table name="country">
+            <column name="id">109</column>
+            <pays>Érythrée</pays>
+            <column name="name_country_uppercase">ÉRYTHRÉE</column>
+            <column name="country_slug">erythree</column>
+            <column name="code">er</column>
+        </table>
+        <table name="country">
+            <column name="id">110</column>
+            <pays>Estonie</pays>
+            <column name="name_country_uppercase">ESTONIE</column>
+            <column name="country_slug">estonie</column>
+            <column name="code">ee</column>
+        </table>
+        <table name="country">
+            <column name="id">111</column>
+            <pays>Ethiopie</pays>
+            <column name="name_country_uppercase">ETHIOPIE</column>
+            <column name="country_slug">ethiopie</column>
+            <column name="code">et</column>
+        </table>
+        <table name="country">
+            <column name="id">112</column>
+            <pays>Falkland (Île)</pays>
+            <column name="name_country_uppercase">FALKLAND (ÎLE)</column>
+            <column name="country_slug">falkland-ile</column>
+            <column name="code">fk</column>
+        </table>
+        <table name="country">
+            <column name="id">113</column>
+            <pays>Féroé (Îles)</pays>
+            <column name="name_country_uppercase">FÉROÉ (ÎLES)</column>
+            <column name="country_slug">feroe-iles</column>
+            <column name="code">fo</column>
+        </table>
+        <table name="country">
+            <column name="id">114</column>
+            <pays>Fidji (République des)</pays>
+            <column name="name_country_uppercase">FIDJI (RÉPUBLIQUE DES)</column>
+            <column name="country_slug">fidji-republique-des</column>
+            <column name="code">fj</column>
+        </table>
+        <table name="country">
+            <column name="id">115</column>
+            <pays>Guyane française</pays>
+            <column name="name_country_uppercase">GUYANE FRANÇAISE</column>
+            <column name="country_slug">guyane-francaise</column>
+            <column name="code">gf</column>
+        </table>
+        <table name="country">
+            <column name="id">116</column>
+            <pays>Polynésie française</pays>
+            <column name="name_country_uppercase">POLYNÉSIE FRANÇAISE</column>
+            <column name="country_slug">polynesie-francaise</column>
+            <column name="code">pf</column>
+        </table>
+        <table name="country">
+            <column name="id">117</column>
+            <pays>Territoires français du sud</pays>
+            <column name="name_country_uppercase">TERRITOIRES FRANÇAIS DU SUD</column>
+            <column name="country_slug">territoires-francais-du-sud</column>
+            <column name="code">tf</column>
+        </table>
+        <table name="country">
+            <column name="id">118</column>
+            <pays>Gabon</pays>
+            <column name="name_country_uppercase">GABON</column>
+            <column name="country_slug">gabon</column>
+            <column name="code">ga</column>
+        </table>
+        <table name="country">
+            <column name="id">119</column>
+            <pays>Gambie</pays>
+            <column name="name_country_uppercase">GAMBIE</column>
+            <column name="country_slug">gambie</column>
+            <column name="code">gm</column>
+        </table>
+        <table name="country">
+            <column name="id">120</column>
+            <pays>Géorgie</pays>
+            <column name="name_country_uppercase">GÉORGIE</column>
+            <column name="country_slug">georgie</column>
+            <column name="code">ge</column>
+        </table>
+        <table name="country">
+            <column name="id">121</column>
+            <pays>Ghana</pays>
+            <column name="name_country_uppercase">GHANA</column>
+            <column name="country_slug">ghana</column>
+            <column name="code">gh</column>
+        </table>
+        <table name="country">
+            <column name="id">122</column>
+            <pays>Gibraltar</pays>
+            <column name="name_country_uppercase">GIBRALTAR</column>
+            <column name="country_slug">gibraltar</column>
+            <column name="code">gi</column>
+        </table>
+        <table name="country">
+            <column name="id">123</column>
+            <pays>Groenland</pays>
+            <column name="name_country_uppercase">GROENLAND</column>
+            <column name="country_slug">groenland</column>
+            <column name="code">gl</column>
+        </table>
+        <table name="country">
+            <column name="id">124</column>
+            <pays>Grenade</pays>
+            <column name="name_country_uppercase">GRENADE</column>
+            <column name="country_slug">grenade</column>
+            <column name="code">gd</column>
+        </table>
+        <table name="country">
+            <column name="id">125</column>
+            <pays>Guadeloupe</pays>
+            <column name="name_country_uppercase">GUADELOUPE</column>
+            <column name="country_slug">guadeloupe</column>
+            <column name="code">gp</column>
+        </table>
+        <table name="country">
+            <column name="id">126</column>
+            <pays>Guam</pays>
+            <column name="name_country_uppercase">GUAM</column>
+            <column name="country_slug">guam</column>
+            <column name="code">gu</column>
+        </table>
+        <table name="country">
+            <column name="id">127</column>
+            <pays>Guatemala</pays>
+            <column name="name_country_uppercase">GUATEMALA</column>
+            <column name="country_slug">guatemala</column>
+            <column name="code">gt</column>
+        </table>
+        <table name="country">
+            <column name="id">128</column>
+            <pays>Guinée</pays>
+            <column name="name_country_uppercase">GUINÉE</column>
+            <column name="country_slug">guinee</column>
+            <column name="code">gn</column>
+        </table>
+        <table name="country">
+            <column name="id">129</column>
+            <pays>Guinée-Bissau</pays>
+            <column name="name_country_uppercase">GUINÉE-BISSAU</column>
+            <column name="country_slug">guinee-bissau</column>
+            <column name="code">gw</column>
+        </table>
+        <table name="country">
+            <column name="id">130</column>
+            <pays>Guyane</pays>
+            <column name="name_country_uppercase">GUYANE</column>
+            <column name="country_slug">guyane</column>
+            <column name="code">gy</column>
+        </table>
+        <table name="country">
+            <column name="id">131</column>
+            <pays>Haïti</pays>
+            <column name="name_country_uppercase">HAÏTI</column>
+            <column name="country_slug">haiti</column>
+            <column name="code">ht</column>
+        </table>
+        <table name="country">
+            <column name="id">132</column>
+            <pays>Heard et McDonald (Îles)</pays>
+            <column name="name_country_uppercase">HEARD ET MCDONALD (ÎLES)</column>
+            <column name="country_slug">heard-et-mcdonald-iles</column>
+            <column name="code">hm</column>
+        </table>
+        <table name="country">
+            <column name="id">133</column>
+            <pays>Honduras</pays>
+            <column name="name_country_uppercase">HONDURAS</column>
+            <column name="country_slug">honduras</column>
+            <column name="code">hn</column>
+        </table>
+        <table name="country">
+            <column name="id">134</column>
+            <pays>Islande</pays>
+            <column name="name_country_uppercase">ISLANDE</column>
+            <column name="country_slug">islande</column>
+            <column name="code">is</column>
+        </table>
+        <table name="country">
+            <column name="id">135</column>
+            <pays>Iran</pays>
+            <column name="name_country_uppercase">IRAN</column>
+            <column name="country_slug">iran</column>
+            <column name="code">ir</column>
+        </table>
+        <table name="country">
+            <column name="id">136</column>
+            <pays>Irak</pays>
+            <column name="name_country_uppercase">IRAK</column>
+            <column name="country_slug">irak</column>
+            <column name="code">iq</column>
+        </table>
+        <table name="country">
+            <column name="id">137</column>
+            <pays>Côte d'Ivoire</pays>
+            <column name="name_country_uppercase">CÔTE D'IVOIRE</column>
+            <column name="country_slug">cote-divoire</column>
+            <column name="code">ci</column>
+        </table>
+        <table name="country">
+            <column name="id">138</column>
+            <pays>Jamaïque</pays>
+            <column name="name_country_uppercase">JAMAÏQUE</column>
+            <column name="country_slug">jamaique</column>
+            <column name="code">jm</column>
+        </table>
+        <table name="country">
+            <column name="id">139</column>
+            <pays>Kazakhstan</pays>
+            <column name="name_country_uppercase">KAZAKHSTAN</column>
+            <column name="country_slug">kazakhstan</column>
+            <column name="code">kz</column>
+        </table>
+        <table name="country">
+            <column name="id">140</column>
+            <pays>Kenya</pays>
+            <column name="name_country_uppercase">KENYA</column>
+            <column name="country_slug">kenya</column>
+            <column name="code">ke</column>
+        </table>
+        <table name="country">
+            <column name="id">141</column>
+            <pays>Kiribati</pays>
+            <column name="name_country_uppercase">KIRIBATI</column>
+            <column name="country_slug">kiribati</column>
+            <column name="code">ki</column>
+        </table>
+        <table name="country">
+            <column name="id">142</column>
+            <pays>Corée du Nord</pays>
+            <column name="name_country_uppercase">CORÉE DU NORD</column>
+            <column name="country_slug">coree-du-nord</column>
+            <column name="code">kp</column>
+        </table>
+        <table name="country">
+            <column name="id">143</column>
+            <pays>Koweit</pays>
+            <column name="name_country_uppercase">KOWEIT</column>
+            <column name="country_slug">koweit</column>
+            <column name="code">kw</column>
+        </table>
+        <table name="country">
+            <column name="id">144</column>
+            <pays>Kirghizistan</pays>
+            <column name="name_country_uppercase">KIRGHIZISTAN</column>
+            <column name="country_slug">kirghizistan</column>
+            <column name="code">kg</column>
+        </table>
+        <table name="country">
+            <column name="id">145</column>
+            <pays>Laos</pays>
+            <column name="name_country_uppercase">LAOS</column>
+            <column name="country_slug">laos</column>
+            <column name="code">la</column>
+        </table>
+        <table name="country">
+            <column name="id">146</column>
+            <pays>Lettonie</pays>
+            <column name="name_country_uppercase">LETTONIE</column>
+            <column name="country_slug">lettonie</column>
+            <column name="code">lv</column>
+        </table>
+        <table name="country">
+            <column name="id">147</column>
+            <pays>Lesotho</pays>
+            <column name="name_country_uppercase">LESOTHO</column>
+            <column name="country_slug">lesotho</column>
+            <column name="code">ls</column>
+        </table>
+        <table name="country">
+            <column name="id">148</column>
+            <pays>Libéria</pays>
+            <column name="name_country_uppercase">LIBÉRIA</column>
+            <column name="country_slug">liberia</column>
+            <column name="code">lr</column>
+        </table>
+        <table name="country">
+            <column name="id">149</column>
+            <pays>Libye</pays>
+            <column name="name_country_uppercase">LIBYE</column>
+            <column name="country_slug">libye</column>
+            <column name="code">ly</column>
+        </table>
+        <table name="country">
+            <column name="id">150</column>
+            <pays>Liechtenstein</pays>
+            <column name="name_country_uppercase">LIECHTENSTEIN</column>
+            <column name="country_slug">liechtenstein</column>
+            <column name="code">li</column>
+        </table>
+        <table name="country">
+            <column name="id">151</column>
+            <pays>Lithuanie</pays>
+            <column name="name_country_uppercase">LITHUANIE</column>
+            <column name="country_slug">lithuanie</column>
+            <column name="code">lt</column>
+        </table>
+        <table name="country">
+            <column name="id">152</column>
+            <pays>Luxembourg</pays>
+            <column name="name_country_uppercase">LUXEMBOURG</column>
+            <column name="country_slug">luxembourg</column>
+            <column name="code">lu</column>
+        </table>
+        <table name="country">
+            <column name="id">153</column>
+            <pays>Macau</pays>
+            <column name="name_country_uppercase">MACAU</column>
+            <column name="country_slug">macau</column>
+            <column name="code">mo</column>
+        </table>
+        <table name="country">
+            <column name="id">154</column>
+            <pays>Macédoine</pays>
+            <column name="name_country_uppercase">MACÉDOINE</column>
+            <column name="country_slug">macedoine</column>
+            <column name="code">mk</column>
+        </table>
+        <table name="country">
+            <column name="id">155</column>
+            <pays>Madagascar</pays>
+            <column name="name_country_uppercase">MADAGASCAR</column>
+            <column name="country_slug">madagascar</column>
+            <column name="code">mg</column>
+        </table>
+        <table name="country">
+            <column name="id">156</column>
+            <pays>Malawi</pays>
+            <column name="name_country_uppercase">MALAWI</column>
+            <column name="country_slug">malawi</column>
+            <column name="code">mw</column>
+        </table>
+        <table name="country">
+            <column name="id">157</column>
+            <pays>Maldives (Îles)</pays>
+            <column name="name_country_uppercase">MALDIVES (ÎLES)</column>
+            <column name="country_slug">maldives-iles</column>
+            <column name="code">mv</column>
+        </table>
+        <table name="country">
+            <column name="id">158</column>
+            <pays>Mali</pays>
+            <column name="name_country_uppercase">MALI</column>
+            <column name="country_slug">mali</column>
+            <column name="code">ml</column>
+        </table>
+        <table name="country">
+            <column name="id">159</column>
+            <pays>Malte</pays>
+            <column name="name_country_uppercase">MALTE</column>
+            <column name="country_slug">malte</column>
+            <column name="code">mt</column>
+        </table>
+        <table name="country">
+            <column name="id">160</column>
+            <pays>Marshall (Îles)</pays>
+            <column name="name_country_uppercase">MARSHALL (ÎLES)</column>
+            <column name="country_slug">marshall-iles</column>
+            <column name="code">mh</column>
+        </table>
+        <table name="country">
+            <column name="id">161</column>
+            <pays>Martinique</pays>
+            <column name="name_country_uppercase">MARTINIQUE</column>
+            <column name="country_slug">martinique</column>
+            <column name="code">mq</column>
+        </table>
+        <table name="country">
+            <column name="id">162</column>
+            <pays>Mauritanie</pays>
+            <column name="name_country_uppercase">MAURITANIE</column>
+            <column name="country_slug">mauritanie</column>
+            <column name="code">mr</column>
+        </table>
+        <table name="country">
+            <column name="id">163</column>
+            <pays>Maurice</pays>
+            <column name="name_country_uppercase">MAURICE</column>
+            <column name="country_slug">maurice</column>
+            <column name="code">mu</column>
+        </table>
+        <table name="country">
+            <column name="id">164</column>
+            <pays>Mayotte</pays>
+            <column name="name_country_uppercase">MAYOTTE</column>
+            <column name="country_slug">mayotte</column>
+            <column name="code">yt</column>
+        </table>
+        <table name="country">
+            <column name="id">165</column>
+            <pays>Micronésie (États fédérés de)</pays>
+            <column name="name_country_uppercase">MICRONÉSIE (ÉTATS FÉDÉRÉS DE)</column>
+            <column name="country_slug">micronesie-etats-federes-de</column>
+            <column name="code">fm</column>
+        </table>
+        <table name="country">
+            <column name="id">166</column>
+            <pays>Moldavie</pays>
+            <column name="name_country_uppercase">MOLDAVIE</column>
+            <column name="country_slug">moldavie</column>
+            <column name="code">md</column>
+        </table>
+        <table name="country">
+            <column name="id">167</column>
+            <pays>Monaco</pays>
+            <column name="name_country_uppercase">MONACO</column>
+            <column name="country_slug">monaco</column>
+            <column name="code">mc</column>
+        </table>
+        <table name="country">
+            <column name="id">168</column>
+            <pays>Mongolie</pays>
+            <column name="name_country_uppercase">MONGOLIE</column>
+            <column name="country_slug">mongolie</column>
+            <column name="code">mn</column>
+        </table>
+        <table name="country">
+            <column name="id">169</column>
+            <pays>Montserrat</pays>
+            <column name="name_country_uppercase">MONTSERRAT</column>
+            <column name="country_slug">montserrat</column>
+            <column name="code">ms</column>
+        </table>
+        <table name="country">
+            <column name="id">170</column>
+            <pays>Mozambique</pays>
+            <column name="name_country_uppercase">MOZAMBIQUE</column>
+            <column name="country_slug">mozambique</column>
+            <column name="code">mz</column>
+        </table>
+        <table name="country">
+            <column name="id">171</column>
+            <pays>Myanmar</pays>
+            <column name="name_country_uppercase">MYANMAR</column>
+            <column name="country_slug">myanmar</column>
+            <column name="code">mm</column>
+        </table>
+        <table name="country">
+            <column name="id">172</column>
+            <pays>Namibie</pays>
+            <column name="name_country_uppercase">NAMIBIE</column>
+            <column name="country_slug">namibie</column>
+            <column name="code">na</column>
+        </table>
+        <table name="country">
+            <column name="id">173</column>
+            <pays>Nauru</pays>
+            <column name="name_country_uppercase">NAURU</column>
+            <column name="country_slug">nauru</column>
+            <column name="code">nr</column>
+        </table>
+        <table name="country">
+            <column name="id">174</column>
+            <pays>Nepal</pays>
+            <column name="name_country_uppercase">NEPAL</column>
+            <column name="country_slug">nepal</column>
+            <column name="code">np</column>
+        </table>
+        <table name="country">
+            <column name="id">175</column>
+            <pays>Antilles néerlandaises</pays>
+            <column name="name_country_uppercase">ANTILLES NÉERLANDAISES</column>
+            <column name="country_slug">antilles-neerlandaises</column>
+            <column name="code">an</column>
+        </table>
+        <table name="country">
+            <column name="id">176</column>
+            <pays>Nouvelle Calédonie</pays>
+            <column name="name_country_uppercase">NOUVELLE CALÉDONIE</column>
+            <column name="country_slug">nouvelle-caledonie</column>
+            <column name="code">nc</column>
+        </table>
+        <table name="country">
+            <column name="id">177</column>
+            <pays>Nicaragua</pays>
+            <column name="name_country_uppercase">NICARAGUA</column>
+            <column name="country_slug">nicaragua</column>
+            <column name="code">ni</column>
+        </table>
+        <table name="country">
+            <column name="id">178</column>
+            <pays>Niger</pays>
+            <column name="name_country_uppercase">NIGER</column>
+            <column name="country_slug">niger</column>
+            <column name="code">ne</column>
+        </table>
+        <table name="country">
+            <column name="id">179</column>
+            <pays>Nigeria</pays>
+            <column name="name_country_uppercase">NIGERIA</column>
+            <column name="country_slug">nigeria</column>
+            <column name="code">ng</column>
+        </table>
+        <table name="country">
+            <column name="id">180</column>
+            <pays>Niue</pays>
+            <column name="name_country_uppercase">NIUE</column>
+            <column name="country_slug">niue</column>
+            <column name="code">nu</column>
+        </table>
+        <table name="country">
+            <column name="id">181</column>
+            <pays>Norfolk (Îles)</pays>
+            <column name="name_country_uppercase">NORFOLK (ÎLES)</column>
+            <column name="country_slug">norfolk-iles</column>
+            <column name="code">nf</column>
+        </table>
+        <table name="country">
+            <column name="id">182</column>
+            <pays>Mariannes du Nord (Îles)</pays>
+            <column name="name_country_uppercase">MARIANNES DU NORD (ÎLES)</column>
+            <column name="country_slug">mariannes-du-nord-iles</column>
+            <column name="code">mp</column>
+        </table>
+        <table name="country">
+            <column name="id">183</column>
+            <pays>Oman</pays>
+            <column name="name_country_uppercase">OMAN</column>
+            <column name="country_slug">oman</column>
+            <column name="code">om</column>
+        </table>
+        <table name="country">
+            <column name="id">184</column>
+            <pays>Palau</pays>
+            <column name="name_country_uppercase">PALAU</column>
+            <column name="country_slug">palau</column>
+            <column name="code">pw</column>
+        </table>
+        <table name="country">
+            <column name="id">185</column>
+            <pays>Panama</pays>
+            <column name="name_country_uppercase">PANAMA</column>
+            <column name="country_slug">panama</column>
+            <column name="code">pa</column>
+        </table>
+        <table name="country">
+            <column name="id">186</column>
+            <pays>Papouasie-Nouvelle-Guinée</pays>
+            <column name="name_country_uppercase">PAPOUASIE-NOUVELLE-GUINÉE</column>
+            <column name="country_slug">papouasie-nouvelle-guinee</column>
+            <column name="code">pg</column>
+        </table>
+        <table name="country">
+            <column name="id">187</column>
+            <pays>Paraguay</pays>
+            <column name="name_country_uppercase">PARAGUAY</column>
+            <column name="country_slug">paraguay</column>
+            <column name="code">py</column>
+        </table>
+        <table name="country">
+            <column name="id">188</column>
+            <pays>Pitcairn (Îles)</pays>
+            <column name="name_country_uppercase">PITCAIRN (ÎLES)</column>
+            <column name="country_slug">pitcairn-iles</column>
+            <column name="code">pn</column>
+        </table>
+        <table name="country">
+            <column name="id">189</column>
+            <pays>Qatar</pays>
+            <column name="name_country_uppercase">QATAR</column>
+            <column name="country_slug">qatar</column>
+            <column name="code">qa</column>
+        </table>
+        <table name="country">
+            <column name="id">190</column>
+            <pays>Réunion (La)</pays>
+            <column name="name_country_uppercase">RÉUNION (LA)</column>
+            <column name="country_slug">reunion-la</column>
+            <column name="code">re</column>
+        </table>
+        <table name="country">
+            <column name="id">191</column>
+            <pays>Rwanda</pays>
+            <column name="name_country_uppercase">RWANDA</column>
+            <column name="country_slug">rwanda</column>
+            <column name="code">rw</column>
+        </table>
+        <table name="country">
+            <column name="id">192</column>
+            <pays>Géorgie du Sud et Sandwich du Sud (Îles)</pays>
+            <column name="name_country_uppercase">GÉORGIE DU SUD ET SANDWICH DU SUD (ÎLES)</column>
+            <column name="country_slug">georgie-du-sud-et-sandwich-du-sud-iles</column>
+            <column name="code">gs</column>
+        </table>
+        <table name="country">
+            <column name="id">193</column>
+            <pays>Saint-Kitts et Nevis</pays>
+            <column name="name_country_uppercase">SAINT-KITTS ET NEVIS</column>
+            <column name="country_slug">saint-kitts-et-nevis</column>
+            <column name="code">kn</column>
+        </table>
+        <table name="country">
+            <column name="id">194</column>
+            <pays>Sainte Lucie</pays>
+            <column name="name_country_uppercase">SAINTE LUCIE</column>
+            <column name="country_slug">sainte-lucie</column>
+            <column name="code">lc</column>
+        </table>
+        <table name="country">
+            <column name="id">195</column>
+            <pays>Saint Vincent et les Grenadines</pays>
+            <column name="name_country_uppercase">SAINT VINCENT ET LES GRENADINES</column>
+            <column name="country_slug">saint-vincent-et-les-grenadines</column>
+            <column name="code">vc</column>
+        </table>
+        <table name="country">
+            <column name="id">196</column>
+            <pays>Samoa</pays>
+            <column name="name_country_uppercase">SAMOA</column>
+            <column name="country_slug">samoa</column>
+            <column name="code">ws</column>
+        </table>
+        <table name="country">
+            <column name="id">197</column>
+            <pays>Saint-Marin (Rép. de)</pays>
+            <column name="name_country_uppercase">SAINT-MARIN (RÉP. DE)</column>
+            <column name="country_slug">saint-marin-rep-de</column>
+            <column name="code">sm</column>
+        </table>
+        <table name="country">
+            <column name="id">198</column>
+            <pays>São Tomé et Príncipe (Rép.)</pays>
+            <column name="name_country_uppercase">SÃO TOMÉ ET PRÍNCIPE (RÉP.)</column>
+            <column name="country_slug">sao-tome-et-principe-rep</column>
+            <column name="code">st</column>
+        </table>
+        <table name="country">
+            <column name="id">199</column>
+            <pays>Sénégal</pays>
+            <column name="name_country_uppercase">SÉNÉGAL</column>
+            <column name="country_slug">senegal</column>
+            <column name="code">sn</column>
+        </table>
+        <table name="country">
+            <column name="id">200</column>
+            <pays>Seychelles</pays>
+            <column name="name_country_uppercase">SEYCHELLES</column>
+            <column name="country_slug">seychelles</column>
+            <column name="code">sc</column>
+        </table>
+        <table name="country">
+            <column name="id">201</column>
+            <pays>Sierra Leone</pays>
+            <column name="name_country_uppercase">SIERRA LEONE</column>
+            <column name="country_slug">sierra-leone</column>
+            <column name="code">sl</column>
+        </table>
+        <table name="country">
+            <column name="id">202</column>
+            <pays>Slovaquie</pays>
+            <column name="name_country_uppercase">SLOVAQUIE</column>
+            <column name="country_slug">slovaquie</column>
+            <column name="code">sk</column>
+        </table>
+        <table name="country">
+            <column name="id">203</column>
+            <pays>Slovénie</pays>
+            <column name="name_country_uppercase">SLOVÉNIE</column>
+            <column name="country_slug">slovenie</column>
+            <column name="code">si</column>
+        </table>
+        <table name="country">
+            <column name="id">204</column>
+            <pays>Somalie</pays>
+            <column name="name_country_uppercase">SOMALIE</column>
+            <column name="country_slug">somalie</column>
+            <column name="code">so</column>
+        </table>
+        <table name="country">
+            <column name="id">205</column>
+            <pays>Sri Lanka</pays>
+            <column name="name_country_uppercase">SRI LANKA</column>
+            <column name="country_slug">sri-lanka</column>
+            <column name="code">lk</column>
+        </table>
+        <table name="country">
+            <column name="id">206</column>
+            <pays>Sainte Hélène</pays>
+            <column name="name_country_uppercase">SAINTE HÉLÈNE</column>
+            <column name="country_slug">sainte-helene</column>
+            <column name="code">sh</column>
+        </table>
+        <table name="country">
+            <column name="id">207</column>
+            <pays>Saint Pierre et Miquelon</pays>
+            <column name="name_country_uppercase">SAINT PIERRE ET MIQUELON</column>
+            <column name="country_slug">saint-pierre-et-miquelon</column>
+            <column name="code">pm</column>
+        </table>
+        <table name="country">
+            <column name="id">208</column>
+            <pays>Soudan</pays>
+            <column name="name_country_uppercase">SOUDAN</column>
+            <column name="country_slug">soudan</column>
+            <column name="code">sd</column>
+        </table>
+        <table name="country">
+            <column name="id">209</column>
+            <pays>Suriname</pays>
+            <column name="name_country_uppercase">SURINAME</column>
+            <column name="country_slug">suriname</column>
+            <column name="code">sr</column>
+        </table>
+        <table name="country">
+            <column name="id">210</column>
+            <pays>Svalbard et Jan Mayen (Îles)</pays>
+            <column name="name_country_uppercase">SVALBARD ET JAN MAYEN (ÎLES)</column>
+            <column name="country_slug">svalbard-et-jan-mayen-iles</column>
+            <column name="code">sj</column>
+        </table>
+        <table name="country">
+            <column name="id">211</column>
+            <pays>Swaziland</pays>
+            <column name="name_country_uppercase">SWAZILAND</column>
+            <column name="country_slug">swaziland</column>
+            <column name="code">sz</column>
+        </table>
+        <table name="country">
+            <column name="id">212</column>
+            <pays>Syrie</pays>
+            <column name="name_country_uppercase">SYRIE</column>
+            <column name="country_slug">syrie</column>
+            <column name="code">sy</column>
+        </table>
+        <table name="country">
+            <column name="id">213</column>
+            <pays>Tadjikistan</pays>
+            <column name="name_country_uppercase">TADJIKISTAN</column>
+            <column name="country_slug">tadjikistan</column>
+            <column name="code">tj</column>
+        </table>
+        <table name="country">
+            <column name="id">214</column>
+            <pays>Tanzanie</pays>
+            <column name="name_country_uppercase">TANZANIE</column>
+            <column name="country_slug">tanzanie</column>
+            <column name="code">tz</column>
+        </table>
+        <table name="country">
+            <column name="id">215</column>
+            <pays>Togo</pays>
+            <column name="name_country_uppercase">TOGO</column>
+            <column name="country_slug">togo</column>
+            <column name="code">tg</column>
+        </table>
+        <table name="country">
+            <column name="id">216</column>
+            <pays>Tokelau</pays>
+            <column name="name_country_uppercase">TOKELAU</column>
+            <column name="country_slug">tokelau</column>
+            <column name="code">tk</column>
+        </table>
+        <table name="country">
+            <column name="id">217</column>
+            <pays>Tonga</pays>
+            <column name="name_country_uppercase">TONGA</column>
+            <column name="country_slug">tonga</column>
+            <column name="code">to</column>
+        </table>
+        <table name="country">
+            <column name="id">218</column>
+            <pays>Trinité et Tobago</pays>
+            <column name="name_country_uppercase">TRINITÉ ET TOBAGO</column>
+            <column name="country_slug">trinite-et-tobago</column>
+            <column name="code">tt</column>
+        </table>
+        <table name="country">
+            <column name="id">219</column>
+            <pays>Tunisie</pays>
+            <column name="name_country_uppercase">TUNISIE</column>
+            <column name="country_slug">tunisie</column>
+            <column name="code">tn</column>
+        </table>
+        <table name="country">
+            <column name="id">220</column>
+            <pays>Turkménistan</pays>
+            <column name="name_country_uppercase">TURKMÉNISTAN</column>
+            <column name="country_slug">turkmenistan</column>
+            <column name="code">tm</column>
+        </table>
+        <table name="country">
+            <column name="id">221</column>
+            <pays>Turks et Caïques (Îles)</pays>
+            <column name="name_country_uppercase">TURKS ET CAÏQUES (ÎLES)</column>
+            <column name="country_slug">turks-et-caiques-iles</column>
+            <column name="code">tc</column>
+        </table>
+        <table name="country">
+            <column name="id">222</column>
+            <pays>Tuvalu</pays>
+            <column name="name_country_uppercase">TUVALU</column>
+            <column name="country_slug">tuvalu</column>
+            <column name="code">tv</column>
+        </table>
+        <table name="country">
+            <column name="id">223</column>
+            <pays>Îles Mineures Éloignées des États-Unis</pays>
+            <column name="name_country_uppercase">ÎLES MINEURES ÉLOIGNÉES DES ÉTATS-UNIS</column>
+            <column name="country_slug">iles-mineures-eloignees-des-etats-unis</column>
+            <column name="code">um</column>
+        </table>
+        <table name="country">
+            <column name="id">224</column>
+            <pays>Ouganda</pays>
+            <column name="name_country_uppercase">OUGANDA</column>
+            <column name="country_slug">ouganda</column>
+            <column name="code">ug</column>
+        </table>
+        <table name="country">
+            <column name="id">225</column>
+            <pays>Uruguay</pays>
+            <column name="name_country_uppercase">URUGUAY</column>
+            <column name="country_slug">uruguay</column>
+            <column name="code">uy</column>
+        </table>
+        <table name="country">
+            <column name="id">226</column>
+            <pays>Ouzbékistan</pays>
+            <column name="name_country_uppercase">OUZBÉKISTAN</column>
+            <column name="country_slug">ouzbekistan</column>
+            <column name="code">uz</column>
+        </table>
+        <table name="country">
+            <column name="id">227</column>
+            <pays>Vanuatu</pays>
+            <column name="name_country_uppercase">VANUATU</column>
+            <column name="country_slug">vanuatu</column>
+            <column name="code">vu</column>
+        </table>
+        <table name="country">
+            <column name="id">228</column>
+            <pays>Vatican (Etat du)</pays>
+            <column name="name_country_uppercase">VATICAN (ETAT DU)</column>
+            <column name="country_slug">vatican-etat-du</column>
+            <column name="code">va</column>
+        </table>
+        <table name="country">
+            <column name="id">229</column>
+            <pays>Vietnam</pays>
+            <column name="name_country_uppercase">VIETNAM</column>
+            <column name="country_slug">vietnam</column>
+            <column name="code">vn</column>
+        </table>
+        <table name="country">
+            <column name="id">230</column>
+            <pays>Vierges (Îles)</pays>
+            <column name="name_country_uppercase">VIERGES (ÎLES)</column>
+            <column name="country_slug">vierges-iles</column>
+            <column name="code">vi</column>
+        </table>
+        <table name="country">
+            <column name="id">231</column>
+            <pays>Wallis et Futuna (Îles)</pays>
+            <column name="name_country_uppercase">WALLIS ET FUTUNA (ÎLES)</column>
+            <column name="country_slug">wallis-et-futuna-iles</column>
+            <column name="code">wf</column>
+        </table>
+        <table name="country">
+            <column name="id">232</column>
+            <pays>Sahara Occidental</pays>
+            <column name="name_country_uppercase">SAHARA OCCIDENTAL</column>
+            <column name="country_slug">sahara-occidental</column>
+            <column name="code">eh</column>
+        </table>
+        <table name="country">
+            <column name="id">233</column>
+            <pays>Yemen</pays>
+            <column name="name_country_uppercase">YEMEN</column>
+            <column name="country_slug">yemen</column>
+            <column name="code">ye</column>
+        </table>
+        <table name="country">
+            <column name="id">234</column>
+            <pays>Zaïre</pays>
+            <column name="name_country_uppercase">ZAÏRE</column>
+            <column name="country_slug">zaire</column>
+            <column name="code">zr</column>
+        </table>
+        <table name="country">
+            <column name="id">235</column>
+            <pays>Zambie</pays>
+            <column name="name_country_uppercase">ZAMBIE</column>
+            <column name="country_slug">zambie</column>
+            <column name="code">zm</column>
+        </table>
+        <table name="country">
+            <column name="id">236</column>
+            <pays>Zimbabwe</pays>
+            <column name="name_country_uppercase">ZIMBABWE</column>
+            <column name="country_slug">zimbabwe</column>
+            <column name="code">zw</column>
+        </table>
+        <table name="country">
+            <column name="id">237</column>
+            <pays>La Barbad</pays>
+            <column name="name_country_uppercase">LA BARBAD</column>
+            <column name="country_slug">la-barbad</column>
+            <column name="code">bb</column>
+        </table>
+    </database>
