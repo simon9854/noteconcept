@@ -50,7 +50,7 @@ class ManagerMember{
 						$this->_message = $e->getMessage();
 					}
 			}
-			else echo "<img src='./src/image/ico-close.png' alt='erreur pseudo'> Le pseudo est d&eacute;j&agrave; utilis&eacute; veuillez saissir un autre.";
+			else echo "<img src='./src/image/Error.png' alt='erreur pseudo' class='img_errorH'> Le pseudo est d&eacute;j&agrave; utilis&eacute; veuillez saissir un autre.";
 	}
 	public function deleteMeber(Member $perso){
 		$this->_db->exec('DELETE FROM member WHERE id ='.$perso->id());
@@ -79,37 +79,43 @@ class ManagerMember{
 	public function updateMember(Member $perso){
 		$q = $this->_db->prepare('UPDATET member set prenom = :prenom, nom = :nom, age = :age, sexe = :sexe, pseudo = :pseudo,
 				avatar = :avatar, mdp = :mdp, ville = :ville, pays = :pays, adresse = :adresse, email = :email, web = :web, signature = :signature WHERE id ='.$perso->id().'');
-		$q->bindValue(':nom', $perso->nom());
-		$q->bindValue(':prenom', $perso->prenom());
-		$q->bindValue(':sexe', $perso->sexe());
-		$q->bindValue(':pseudo', $perso->pseudo());
-		$q->bindValue(':avatar', $perso->avatar());
-		$q->bindValue(':mdp', $perso->mdp());
-		$q->bindValue(':ville', $perso->ville());
-		$q->bindValue(':pays', $perso->pays());
-		$q->bindValue(':adresse', $perso->adresse());
-		$q->bindValue(':email', $perso->email());
-		$q->bindValue(':web', $perso->web());
-		$q->execute();
+		try{
+			$q->bindValue(':nom', $perso->nom());
+			$q->bindValue(':prenom', $perso->prenom());
+			$q->bindValue(':sexe', $perso->sexe());
+			$q->bindValue(':pseudo', $perso->pseudo());
+			$q->bindValue(':avatar', $perso->avatar());
+			$q->bindValue(':mdp', $perso->mdp());
+			$q->bindValue(':ville', $perso->ville());
+			$q->bindValue(':pays', $perso->pays());
+			$q->bindValue(':adresse', $perso->adresse());
+			$q->bindValue(':email', $perso->email());
+			$q->bindValue(':web', $perso->web());
+			if($q->execute()){
+				$this->_message =  "le membre ". $perso->pseudo() ." à bien été mise à jour.";
+			}
+		}
+		catch (Exception $e){
+			$this->_message = "<span class='message_errorH'><img src='./src/image/Error.png' alt='erreur mise à jour' class='img_errorH'>".$e->getMessage()."</span>";
+		}
 	}
 	
 	public function connect($pseudo, $mdp){
 		$q = $this->_db->query('SELECT COUNT(*) FROM member WHERE pseudo = "'.$pseudo.'"');
-		$count = $q->fetch(PDO::FETCH_ASSOC)['COUNT(*)'];
-		if($count > 0){
+		$count = $q->fetch(PDO::FETCH_ASSOC);
+		if($count['COUNT(*)'] > 0){
 			$q = $this->_db->query('SELECT id FROM member WHERE pseudo = "'.$pseudo.'" AND mdp = "'.$mdp.'"');
 			$donnees = $q->fetch(PDO::FETCH_ASSOC);
-			echo $donnees==null;
 			if($donnees != NULL){
 				return $donnees['id'];
 			}
 			else {
-				$this->_message = "Le mot de passe est incorrecte";
+				$this->_message = "<span class='message_errorH'><img src='./src/image/Error.png' alt='erreur mot de passe' class='img_errorH'>Le mot de passe est incorrecte</span>";
 				return -1;
 			}
 		}
 		else{ 
-			$this->_message = "Le pseudo ".$pseudo." est introuvable";
+			$this->_message = "<span class='message_errorH'><img src='./src/image/Error.png' alt='erreur pseudo' class='img_errorH'>Le pseudo ".$pseudo." est introuvable </span>";
 			return -1;
 		}
 	}

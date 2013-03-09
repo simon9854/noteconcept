@@ -6,11 +6,12 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	</head>
 <body>
-	<?php 
-	include('include/header.inc.php');
+	<?php
 	include('include/autochargement.inc.php');
-	//le fichier use permet la connection à la BDD
 	include('include/use.inc.php');
+	include('include/header.inc.php');
+	//le fichier use permet la connection à la BDD
+
 	
 	?>
 	<h1 id="titr" align="center">Inscription</h1>

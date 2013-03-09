@@ -1,6 +1,22 @@
 <?php
-class Securite
+class Secure
 {
+	private $_Limit;
+	private $_limitTime;
+	
+	public function __construct($limit, $times){
+		$this->_Limit = $limit;
+		$this->_limitTime = $times;
+	}
+	
+	public function limit(){
+		return $this->_Limit;
+	}
+	public function limitTime(){
+		return $this->limitTime();
+	}
+	
+	
 	// Données entrantes
 	public static function bdd($string)
 	{

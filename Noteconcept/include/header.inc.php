@@ -1,4 +1,4 @@
-<?php$manager = new ManagerMember($db);$lienjavascript = "./src/javascript/";if(!isset($_SESSION['id'])){	$_SESSION['id'] = -1;}	// script permettant la connection du membre	if(isset($_POST['do'])){		$_SESSION["id"] = $manager->connect($_POST['loginName'], $_POST['pass']);	}	if(isset($_POST['deconnection'])){			session_destroy();		header("location: ./index.php");	}?>
+<?php$manager = new ManagerMember($db);$secur = new Secure(10, 60*10);$lienjavascript = "./src/javascript/";if(!isset($_SESSION['id'])){	$_SESSION['id'] = -1;}	// script permettant la connection du membre	if(isset($_POST['do'])){		if(!isset($_SESSION['nombre'])){			$_SESSION['nombre'] = 0;		}		if ($_SESSION["nombre"] < $secur->limit()){		$_SESSION["id"] = $manager->connect($_POST['loginName'], $_POST['pass']);		$_SESSION['nombre']++;		}		else{			exit();		}	}	if(isset($_POST['deconnection'])){			session_destroy();		header("location: ./index.php");	}?>
 <script src="<?php echo $lienjavascript;?>jquery.js" type="text/javascript"></script>
 <script src="<?php echo $lienjavascript;?>jquery.tipsy.js" type="text/javascript"></script>
 <nav id="menu">
@@ -46,17 +46,16 @@
 	<?PHP } ?>
 	</ul>
 </nav><?php 	if($manager->message() != ""){		echo $manager->getMessage();	}?>
-<script src="javascripts/jquery.js" type="text/javascript"></script>
-<script type="text/javascript">
+<script type="text/javascript">
         $(document).ready(function() {
             $(".signin").click(function(e) {          
 				e.preventDefault();
                 $("fieldset#signin_menu").toggle();
 				$(".signin").toggleClass("menu-open");
-            });
+            });
 			$("fieldset#signin_menu").mouseup(function() {
 				return false
-			});
+			});
 			$(document).mouseup(function(e) {
 				if($(e.target).parent("a.signin").length==0) {
 					$(".signin").removeClass("menu-open");
@@ -64,8 +63,7 @@
 				}
 			});			
         });
-</script>
-<script src="javascripts/jquery.tipsy.js" type="text/javascript"></script>
+</script>
 <script type='text/javascript'>
     $(function() {
 	  $('#forgot_username_link').tipsy({gravity: 'w'});   
