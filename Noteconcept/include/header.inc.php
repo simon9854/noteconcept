@@ -1,4 +1,4 @@
-<?php$manager = new ManagerMember($db);$secur = new Secure(10, 60*10);$lienjavascript = "./src/javascript/";if(!isset($_SESSION['id'])){	$_SESSION['id'] = -1;}	// script permettant la connection du membre	if(isset($_POST['do'])){		if(!isset($_SESSION['nombre'])){			$_SESSION['nombre'] = 0;		}		if ($_SESSION["nombre"] < $secur->limit()){		$_SESSION["id"] = $manager->connect($_POST['loginName'], $_POST['pass']);		$_SESSION['nombre']++;		}		else{			exit();		}	}	if(isset($_POST['deconnection'])){			session_destroy();		header("location: ./index.php");	}?>
+<?php$manager = new ManagerMember($db);$secur = new Secure(10, 60*10);$lienjavascript = "./src/javascript/";if(!isset($_SESSION['id'])){	$_SESSION['id'] = -1;}if($_SESSION['id'] != -1){	$perso = $manager->getId($_SESSION['id']);}	// script permettant la connection du membre	if(isset($_POST['do'])){		if(!isset($_SESSION['nombre'])){			$_SESSION['nombre'] = 0;		}		if ($_SESSION["nombre"] < $secur->limit()){		$_SESSION["id"] = $manager->connect($_POST['loginName'], $_POST['pass']);		$_SESSION['nombre']++;		}		else{			exit();		}	}	if(isset($_POST['deconnection'])){			session_destroy();		header("location: ./index.php");	}?>
 <script src="<?php echo $lienjavascript;?>jquery.js" type="text/javascript"></script>
 <script src="<?php echo $lienjavascript;?>jquery.tipsy.js" type="text/javascript"></script>
 <nav id="menu">
@@ -31,13 +31,15 @@
 							</p>
 						</form>
 				  </fieldset>
-				  <?php }else{					  	$perso = $manager->getId($_SESSION["id"]);				  	?>				
+				  <?php }else{					  	$perso = $manager->getId($_SESSION["id"]);				  	if($perso->droit() == ADMINISTRATEUR){
+				  		echo "	<li><span class='text-connect'><a href='administration.php'>Administration</a></span></li>";
+				  	}				  	?>				
 				<li><img src='images/interfaces/toggle_down_light.png' width='25px' height='20px' id='img_connect' align='left'><a href="index.php" class="signin"><span>Profil <span></a></li>
 					  <fieldset id="signin_menu">
 						<form method="post" id="signin" action="#">
 						<img src='<?php echo "src/image-avatar/".$perso->avatar(); ?>' width='50px' height='50px' align='left'>
 						<label for="loginName">pseudo : </label><br>
-						  <a href="<?php echo'./includes/voirprofil.php?m='.$perso->id().'&amp;action=consulter';?>"><strong>profil de <?php echo $perso->pseudo();?><strong></a>
+						  <a href="<?php echo'./profil.php?m='.$perso->id().'&amp;action=consulter';?>"><strong>profil de <?php echo $perso->pseudo();?><strong></a>
 						  </p>
 						  <p class="remember">
 							<input id="signin_submit" value="se deconnecter" name="deconnection" tabindex="6" type="submit">

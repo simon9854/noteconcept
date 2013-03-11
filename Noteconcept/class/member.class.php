@@ -20,6 +20,7 @@ class Member{
 	private $_web;
 	private $_signature;
 	private $_error;
+	private $_droit;
 	const REP_AVATAR = "./src/image-avatar/";
 	
 	/**/
@@ -38,6 +39,7 @@ class Member{
 	public function signature(){return $this->_signature;}
 	public function email(){return $this->_email;}
 	public function error(){return $this->_error;}
+	public function droit(){return $this->_droit;}
 	
 
 	public function hydrate(array $donnees){
@@ -54,6 +56,7 @@ class Member{
 	
 	public function setId($id){
 		$id = (int)$id;
+		$this->_id = $id;
 	}
 	
 	//addError permet de sauvegarder les messages d'erreurs
@@ -262,6 +265,11 @@ class Member{
 				return $msg;
 			}
 		}
+	}
+	public function setDroit($droit){
+		$droit = (int)$droit;
+		$this->_droit = $droit;
+		
 	}
 	public function testMember(array $donne){
 		$message_new ="";

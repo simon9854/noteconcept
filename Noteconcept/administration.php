@@ -10,10 +10,18 @@ include('include/use.inc.php');
 <head>
 <title>accueil</title>
 <link rel="stylesheet" type="text/css" href="src/css/design.css">
+<link rel="stylesheet" type="text/css" href="src/css/menuAdmin.css">
 </head>
 <body>
 	<?php
 	include('include/header.inc.php');
+	if($perso->droit() == ADMINISTRATEUR){
+		include("include/menuAdmin.inc.php");
+
+	}
+	else{
+		echo "Vous n'êtes pas autorisé à aller sur cette page.";
+	}
 	print_r($_SESSION);
 	?>
 

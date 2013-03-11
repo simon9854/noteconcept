@@ -1,5 +1,6 @@
 <?php
 session_start();
+include('include/constante.inc.php');
 include('include/autochargement.inc.php');
 include('include/use.inc.php');
 

@@ -25,7 +25,7 @@ class ManagerMember{
 	public function addMember(Member $perso){
 			if($this->verifMember($perso->pseudo(), $perso->email()) == 0){
 				$q = $this->_db->prepare('INSERT INTO member SET nom = :nom, prenom = :prenom, age = :age, sexe = :sexe, pseudo = :pseudo,
-				avatar = :avatar, mdp = :mdp, ville = :ville, pays = :pays, adresse = :adresse, email = :email, web = :web, signature = :signature, date_create = :date');
+				avatar = :avatar, mdp = :mdp, ville = :ville, pays = :pays, adresse = :adresse, email = :email, web = :web, signature = :signature, date_create = :date, droit=:droit');
 				try{
 					$q->bindValue(':nom', $perso->nom(), PDO::PARAM_STR);
 					$q->bindValue(':prenom', $perso->prenom(), PDO::PARAM_STR);
@@ -41,6 +41,7 @@ class ManagerMember{
 					$q->bindValue(':web', $perso->web(), PDO::PARAM_STR);
 					$q->bindValue(':signature', $perso->signature(), PDO::PARAM_STR);
 					$q->bindValue(':date', date("Y-m-d H:i:s"), PDO::PARAM_STR);
+					$q->bindValue(':droit', $perso->droit(), PDO::PARAM_INT);
 					if($q->execute()){
 						$this->_message =  "le membre à bien été crée.";
 						
@@ -78,7 +79,7 @@ class ManagerMember{
 	}
 	public function updateMember(Member $perso){
 		$q = $this->_db->prepare('UPDATET member set prenom = :prenom, nom = :nom, age = :age, sexe = :sexe, pseudo = :pseudo,
-				avatar = :avatar, mdp = :mdp, ville = :ville, pays = :pays, adresse = :adresse, email = :email, web = :web, signature = :signature WHERE id ='.$perso->id().'');
+				avatar = :avatar, mdp = :mdp, ville = :ville, pays = :pays, adresse = :adresse, email = :email, web = :web, signature = :signature WHERE id ='.$perso->id().', droit = :droit');
 		try{
 			$q->bindValue(':nom', $perso->nom());
 			$q->bindValue(':prenom', $perso->prenom());
@@ -91,6 +92,7 @@ class ManagerMember{
 			$q->bindValue(':adresse', $perso->adresse());
 			$q->bindValue(':email', $perso->email());
 			$q->bindValue(':web', $perso->web());
+			$q->bindValue(':droit', $perso->droit(), PDO::PARAM_INT);
 			if($q->execute()){
 				$this->_message =  "le membre ". $perso->pseudo() ." à bien été mise à jour.";
 			}
