@@ -17,12 +17,16 @@ include('include/use.inc.php');
 	include('include/header.inc.php');
 	if($perso->droit() == ADMINISTRATEUR){
 		include("include/menuAdmin.inc.php");
+		echo "<div id='corpAdmin'>
+			". print_r($_SESSION) ."
+		
+		</div>";
 
 	}
 	else{
 		echo "Vous n'êtes pas autorisé à aller sur cette page.";
 	}
-	print_r($_SESSION);
+
 	?>
 
 </body>

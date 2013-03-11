@@ -32,9 +32,9 @@
 						</form>
 				  </fieldset>
 				  <?php }else{					  	$perso = $manager->getId($_SESSION["id"]);				  	if($perso->droit() == ADMINISTRATEUR){
-				  		echo "	<li><span class='text-connect'><a href='administration.php'>Administration</a></span></li>";
-				  	}				  	?>				
-				<li><img src='images/interfaces/toggle_down_light.png' width='25px' height='20px' id='img_connect' align='left'><a href="index.php" class="signin"><span>Profil <span></a></li>
+				  		echo "	<li><span class='text-connect'><a href='administration.php' id='lienAdmin'>Administration</a></span></li>";
+				  	}				  	?>			
+				<li><img src='src/image-menu/toggle_down_light.png' width='25px' height='20px' id='img_connect' align='left'><a href="index.php" class="signin"><span>Profil <span></a></li>
 					  <fieldset id="signin_menu">
 						<form method="post" id="signin" action="#">
 						<img src='<?php echo "src/image-avatar/".$perso->avatar(); ?>' width='50px' height='50px' align='left'>
