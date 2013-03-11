@@ -18,6 +18,7 @@ include('include/use.inc.php');
 	if($perso->droit() == ADMINISTRATEUR){
 		include("include/menuAdmin.inc.php");
 		echo "<div id='corpAdmin'>
+		Je suis la div du corp de l'administration
 			". print_r($_SESSION) ."
 		
 		</div>";

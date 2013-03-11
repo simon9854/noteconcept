@@ -295,5 +295,9 @@ padding: 2px;
 #corpAdmin{
 	
 	margin-left:20px;
-	
-}
+	display:inline-block;
+	margin-top:15px;
+	background:#C6ECAC;
+	width:500px;
+	height:200px;
+	}
