@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 	<head>
 	<title>Inscription Membre</title>
@@ -7,8 +10,9 @@
 	</head>
 <body>
 	<?php
-	include('include/autochargement.inc.php');
 	include('include/use.inc.php');
+	include('include/constante.inc.php');
+	include('include/autochargement.inc.php');
 	include('include/header.inc.php');
 	//le fichier use permet la connection à la BDD
 
