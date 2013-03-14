@@ -3,7 +3,11 @@
 /*---------------------------------------------------- Menu du profil ----------------------------------------------------*/
 
 nav#menuUsers{
-	
+	background:#A2ACAB;
+	width:170px;
+	float:left;
+	height:300px;
+	margin-top:40px;
 }
 
 #ulUsers{
@@ -11,3 +15,26 @@ nav#menuUsers{
 	display:inline;
 }
 
+.HeadProfil{
+	text-align:center;
+	background:black;
+	color:white;
+	border-radius:10px;
+}
+
+.listeU{
+	
+}
+#menuUsers ul li a{
+	margin-top:2px;
+	display:block;
+	padding:0px 0;
+	text-decoration:none;
+	text-align:center;
+	width:168px;
+	height:40px;
+	border:black solid 1px;
+}
+#menuUsers ul li a:hover{
+	background:white;
+}

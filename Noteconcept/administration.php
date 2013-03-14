@@ -19,7 +19,6 @@ include('include/use.inc.php');
 		include("include/menuAdmin.inc.php");
 		echo "<div id='corpAdmin'>
 		Je suis la div du corp de l'administration
-			". print_r($_SESSION) ."
 		
 		</div>";
 

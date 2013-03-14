@@ -2,44 +2,42 @@
 
 #menuAdmin{
 	width:180px;
-	margin:0px;
-	height:300px;
-	display:inline-block;
-	margin-right:50px;
+	background:#A2ACAB;
 	float:left;
+	height:100%;
+	margin-top:0px;
+}
+
+#ulAdmin{
+	list-style:none;
+	display:inline;
 }
 
 #HlisteA{
-	height:30px;
+	margin-left:0px;
+	text-align:center;
+	height:38px;
 	background:#A2B5BF;
 	width:180px;
-	
-
 }
 
-.listeA{
+#menuAdmin ul li a{
+	text-decoration:none;
+	margin-left:0px;
 	width:180px;
 	background:#B8D2A7;
 	margin-bottom:3px;
 	border:1px solid  black;
 	display:block;
 	text-align:center;
+	height:40px;
 }
 
-#menuAdmin ul li a{
-	text-decoration:none;
-}
-
-#menuAdmin .listeA:hover{
+#menuAdmin ul li a:hover{
 	background:#9CB38C;
 	
 }
 
 #menuAdmin ul .listeA a:hover{
 	color:#E1E9DB;
-}
-
-#ulAdmin{
-	list-style:none;
-	
 }

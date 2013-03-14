@@ -22,13 +22,28 @@ $action = isset($_GET['action'])?htmlspecialchars($_GET['action']):'consulter';
 		$perso2 = $manager->getId($id);
 		if($_SESSION['id'] == $id){
 			include('include/menuUsers.inc.php');
+			echo"<div class='corpProfil'>";
 			echo "<h2 class='HeadProfil'>Profil de ".$perso->pseudo()."</h2>";
 		}else{
 			echo "<h2 class='HeadProfil'>Profil de ".$perso2->pseudo()."</h2>";
+			echo"<div class='corpProfil'>";
 		}
 		switch ($action){
 			case "consulter":
-				echo "<img src='src/image-avatar/".$perso2->avatar()."' width='75px' height='75px'>";
+				echo "<img src='src/image-avatar/".$perso2->avatar()."' width='120px' height='120px'>";
+				echo "<p>Nom : ".$perso2->nom()."\n
+				Prénom : ".$perso2->prenom()." \t
+				âge : ".$perso2->age()."
+				Sexe : ".$perso2->sexe()."
+				Pseudo : ".$perso2->pseudo()."
+				Adresse : ".$perso2->adresse()."
+				Pays : ".$perso2->pays()."
+				Ville : ".$perso2->ville()."
+				Email : ".$perso2->email()."
+				Web : ".$perso2->web()."
+				Signature : ".$perso2->signature()."</p>";
+				
+
 			break;
 			case "modif":
 				if($_SESSION['id'] == $perso->id()){
@@ -55,7 +70,7 @@ $action = isset($_GET['action'])?htmlspecialchars($_GET['action']):'consulter';
 					<span class="verif_form"><?php if(isset ($_GET['check'])){ echo  $perso->setAge($_POST['age']); }  ?></span><br>
 					<label for="pass" class='form_col'>* Mot de Passe :</label><input type="password" name="mdp" maxlength = "40" value="<?php echo $perso->mdp(); ?>" />
 					<span class="verif_form"><?php if(isset ($_GET['check'])){ echo $perso->testMdp($_POST['mdp'], $_POST['mdp_confirm']); }  ?></span><br>
-					<label for="confirm" class='form_col'>*Confirmer le mot de passe :</label><input type="password" name="mdp_confirm" maxlength = "40" "/>
+					<label for="confirm" class='form_col'>*Confirmer le mot de passe :</label><input type="password" name="mdp_confirm" maxlength = "40" value="<?php echo $perso->mdp(); ?>" />
 					<br>
 					<label for="lastname" class='form_col'>* Nom :</label><input type="text" name="nom" maxlength = "40"  value="<?php echo $perso->nom(); ?>" /></input>
 					<span class="verif_form"><?php if(isset ($_GET['check'])){ echo $perso->setNom($_POST['nom']); }  ?></span><br>
@@ -81,9 +96,9 @@ $action = isset($_GET['action'])?htmlspecialchars($_GET['action']):'consulter';
 					</fieldset>
 					<fieldset><legend>Contacts</legend>
 					<label for="email" class='form_col'>* Votre adresse Mail :</label><input type="email" name="email" value="<?php echo $perso->email(); ?>" />
-					<span class="verif_form"><?php if(isset ($_GET['check'])){ echo $perso->setEmail($_POST['email']); }  ?></span><br>
-					<label for="website" class='form_col'>Votre site web :</label><input type="url" name="website" value="<?php echo $perso->web(); ?>"/>
-					<span class="verif_form"><?php if(isset ($_GET['check'])){ echo $perso->setWeb($_POST['website']); }  ?></span><br>
+					<span class="verif_form"><?php if(isset ($_POST['email']) && isset ($_GET['check'])){ echo $perso->setEmail($_POST['email']); }  ?></span><br>
+					<label for="website" class='form_col'>Votre site web :</label><input type="input" name="website" value="<?php echo $perso->web(); ?>"/>
+					<span class="verif_form"><?php if(isset ($_POST['website']) && isset ($_GET['check'])){ echo $perso->setWeb($_POST['website']); }  ?></span><br>
 					</fieldset>
 	
 					<fieldset><legend>Profil sur le forum</legend>
@@ -94,22 +109,22 @@ $action = isset($_GET['action'])?htmlspecialchars($_GET['action']):'consulter';
 					</fieldset>
 					Les champs pr&eacute;c&eacute;d&eacute;s d un * sont obligatoires
 					<p>	<?php 
-	
+					echo $perso->error();
 		
 					if(isset ($_GET['check'])){
 						if($perso->error() == 0){
-						$manager = new ManagerMember($db);
-						$manager->addMember($perso);
+							$manager = new ManagerMember($db);
+							$manager->updateMember($perso);
 						}
 					}
 					?>
 					 </p>
-					<input type="submit" value ="Enregistrez-vous"> <input type="reset" value="R&eacute;initialiser le formulaire" />
-				
+					<input type="submit" value ="Mettre à jour">
 					</form>
 				<?php }
 			break;
 		}
+		echo "</div>";
 		
 	}
 	else{

@@ -176,12 +176,8 @@ class Member{
 	
 	public function setMdp($mdp){
 		$mdp = (string)$mdp;
-		if(!preg_match("/^[[:alnum:]]{4,10}$/",$mdp)){
 			$this->_mdp = $mdp;
-		}
-		else{
-			$this->_error++;
-		}
+	
 	
 	}
 	public function setVille($ville){
@@ -200,9 +196,10 @@ class Member{
 	
 	public function setPays($pays){
 	$msg="";
-		if(empty($pays))$this->_pays= "none";
+		if(empty($pays)){
+			$this->_pays= "none";
+		}
 		else {
-			if (is_string($pays)){
 				if(preg_match("/^[[:alpha:]]{2,80}$/",$pays)){
 					$this->_pays= $pays;
 				}
@@ -211,8 +208,7 @@ class Member{
 					$msg .= "<img src='src/image/ico-warning.gif' alt='erreur2'> le pays ne peut contenir que des lettres ";
 					return $msg;
 				}
-			}
-		}	
+			}	
 	} 
 	
 	public function setAdresse($adresse){
@@ -295,9 +291,6 @@ class Member{
 		return $message_new;
 	}
 	
-	public function __destruct(){
-		
-	}
 }
 
 ?>
