@@ -41,7 +41,9 @@ $action = isset($_GET['action'])?htmlspecialchars($_GET['action']):'consulter';
 				Ville : ".$perso2->ville()."
 				Email : ".$perso2->email()."
 				Web : ".$perso2->web()."
-				Signature : ".$perso2->signature()."</p>";
+				Signature : ".$perso2->signature()."
+				Statut sur le site : ". $perso2->statutDroit() ." </p>";
+				
 				
 
 			break;
@@ -50,9 +52,11 @@ $action = isset($_GET['action'])?htmlspecialchars($_GET['action']):'consulter';
 					
 					if(isset ($_GET['check']) and !empty ($_POST)){
 						$msg = $perso->testMember($_POST);
+					
 						if($msg != ""){
 							echo"<span class='message_error'><img src='src/image/ico-close.gif' alt='erreur' id='img-erreur'> ";
 							echo"$msg". "ou le mot de passe diff&eacute;rent de la confirmation. </span>";
+						
 						}
 					}
 					
@@ -74,7 +78,7 @@ $action = isset($_GET['action'])?htmlspecialchars($_GET['action']):'consulter';
 					<br>
 					<label for="lastname" class='form_col'>* Nom :</label><input type="text" name="nom" maxlength = "40"  value="<?php echo $perso->nom(); ?>" /></input>
 					<span class="verif_form"><?php if(isset ($_GET['check'])){ echo $perso->setNom($_POST['nom']); }  ?></span><br>
-					<label for="firstName" class='form_col'>* Pr&eacute;nom :</label><input type="text" name="prenom" maxlength = "40" value="<?php echo $perso->pseudo(); ?>" />
+					<label for="firstName" class='form_col'>* Pr&eacute;nom :</label><input type="text" name="prenom" maxlength = "40" value="<?php echo $perso->prenom(); ?>" />
 					<span class="verif_form"><?php if(isset ($_GET['check'])){ echo $perso->setPrenom($_POST['prenom']); }  ?></span><br>
 					<label for="street" class='form_col'>adresse :</label><input type="text" name="adresse" value="<?php echo $perso->adresse(); ?>" />
 					<span class="verif_form"><?php if(isset ($_GET['check'])){ echo $perso->setAdresse($_POST["adresse"]); }  ?></span><br>
@@ -84,7 +88,7 @@ $action = isset($_GET['action'])?htmlspecialchars($_GET['action']):'consulter';
 					$dom = new DomDocument();
 					$dom->load('src/xml/country.xml');
 					$liste = $dom->getElementsByTagName('pays');
-					echo "<option value='$perso->pays()'>".$perso->pays()."</option>";
+					echo "<option value='".$perso->pays()."'>".$perso->pays()."</option>";
 					foreach($liste as $pays){ 
 						$State = $pays->firstChild->nodeValue;
 						echo "<option value='$State'>".$State."</option>"; 
@@ -108,13 +112,13 @@ $action = isset($_GET['action'])?htmlspecialchars($_GET['action']):'consulter';
 					<span class="verif_form"><?php if(isset ($_GET['check'])){ echo $perso->setSignature($_POST['signature']); }  ?></span><br>
 					</fieldset>
 					Les champs pr&eacute;c&eacute;d&eacute;s d un * sont obligatoires
-					<p>	<?php 
-					echo $perso->error();
-		
+					<p>	<?php
+					 
 					if(isset ($_GET['check'])){
 						if($perso->error() == 0){
-							$manager = new ManagerMember($db);
 							$manager->updateMember($perso);
+							echo $manager->message();
+							
 						}
 					}
 					?>

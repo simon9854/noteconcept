@@ -1,4 +1,4 @@
-<?php$manager = new ManagerMember($db);$secur = new Secure(10, 60*10);$lienjavascript = "./src/javascript/";if(!isset($_SESSION['id'])){	$_SESSION['id'] = -1;}if($_SESSION['id'] != -1){	$perso = $manager->getId($_SESSION['id']);}	// script permettant la connection du membre	if(isset($_POST['do'])){		if(!isset($_SESSION['nombre'])){			$_SESSION['nombre'] = 0;		}		if ($_SESSION["nombre"] < $secur->limit()){		$_SESSION["id"] = $manager->connect($_POST['loginName'], $_POST['pass']);		$_SESSION['nombre']++;		header("location: ./index.php");		}		else{			exit();		}	}	if(isset($_POST['deconnection'])){			session_destroy();		header("location: ./index.php");	}?>
+<?php$manager = new ManagerMember($db);$secur = new Secure(30, 60*10);$lienjavascript = "./src/javascript/";if(!isset($_SESSION['id'])){	$_SESSION['id'] = -1;}if($_SESSION['id'] != -1){	$perso = $manager->getId($_SESSION['id']);}	// script permettant la connection du membre	if(isset($_POST['do'])){		if(!isset($_SESSION['nombre'])){			$_SESSION['nombre'] = 0;		}		if ($_SESSION["nombre"] < $secur->limit()){		$_SESSION["id"] = $manager->connect($_POST['loginName'], $_POST['pass']);		$_SESSION['nombre']++;		}		else{			exit();		}	}	if(isset($_POST['deconnection'])){			session_destroy();		header("location: ./index.php");	}?>
 <script src="<?php echo $lienjavascript;?>jquery.js" type="text/javascript"></script>
 <script src="<?php echo $lienjavascript;?>jquery.tipsy.js" type="text/javascript"></script>
 <nav id="menu">
@@ -31,7 +31,7 @@
 							</p>
 						</form>
 				  </fieldset>
-				  <?php }else{					  	$perso = $manager->getId($_SESSION["id"]);				  	if($perso->droit() == ADMINISTRATEUR){
+				  <?php }else{					  	$perso = $manager->getId($_SESSION["id"]);				  	if($perso->droit() == 1111){
 				  		echo "	<li><span class='text-connect'><a href='administration.php' id='lienAdmin'>Administration</a></span></li>";
 				  	}				  	?>			
 				<li><img src='src/image-menu/toggle_down_light.png' width='25px' height='20px' id='img_connect' align='left'><a href="index.php" class="signin"><span>Profil <span></a></li>
@@ -47,7 +47,7 @@
 					  </fieldset>
 	<?PHP } ?>
 	</ul>
-</nav><?php 	if($manager->message() != ""){		echo $manager->getMessage();	}?>
+</nav><?php 	if($manager->message() != ""){		echo $manager->message();	}?>
 <script type="text/javascript">
         $(document).ready(function() {
             $(".signin").click(function(e) {          

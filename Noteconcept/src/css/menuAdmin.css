@@ -1,11 +1,12 @@
 @CHARSET "ISO-8859-1";
 
 #menuAdmin{
-	width:180px;
+	width:210px;
 	background:#A2ACAB;
 	float:left;
 	height:100%;
 	margin-top:0px;
+	margin-left:2px;
 }
 
 #ulAdmin{
@@ -14,27 +15,36 @@
 }
 
 #HlisteA{
+	
+	padding-top:2px;
 	margin-left:0px;
 	text-align:center;
 	height:38px;
-	background:#A2B5BF;
-	width:180px;
+	background:#363636;
+	width:200px;
+	color:white;
+	height:50px;
+	
 }
 
 #menuAdmin ul li a{
+	padding-top:5px;
+	border-radius:6px;
 	text-decoration:none;
 	margin-left:0px;
-	width:180px;
-	background:#B8D2A7;
+	width:200px;
+	background-image:linear-gradient(#f4f4f4,  #d1d1d1);
+	color:#4f4f4f;
 	margin-bottom:3px;
-	border:1px solid  black;
 	display:block;
 	text-align:center;
 	height:40px;
+	border-bottom:#bbbbbb solid 2px;
 }
 
 #menuAdmin ul li a:hover{
-	background:#9CB38C;
+	background-image:linear-gradient(#a0a0a0,  #676767);
+	color:white;
 	
 }
 

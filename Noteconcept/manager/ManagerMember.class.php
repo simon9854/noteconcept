@@ -41,10 +41,9 @@ class ManagerMember{
 					$q->bindValue(':web', $perso->web(), PDO::PARAM_STR);
 					$q->bindValue(':signature', $perso->signature(), PDO::PARAM_STR);
 					$q->bindValue(':date', date("Y-m-d H:i:s"), PDO::PARAM_STR);
-					$q->bindValue(':droit', $perso->droit(), PDO::PARAM_INT);
+					$q->bindValue(':droit', 0010, PDO::PARAM_INT);
 					if($q->execute()){
 						$this->_message =  "le membre à bien été crée.";
-						
 					}
 				}
 					catch (Exception $e){
@@ -78,28 +77,34 @@ class ManagerMember{
 		
 	}
 	public function updateMember(Member $perso){
-		$q = $this->_db->prepare('UPDATET member set prenom = :prenom, nom = :nom, age = :age, sexe = :sexe, pseudo = :pseudo,
-				avatar = :avatar, mdp = :mdp, ville = :ville, pays = :pays, adresse = :adresse, email = :email, web = :web, signature = :signature WHERE id ='.$perso->id().', droit = :droit');
+		
+		$q = $this->_db->prepare('UPDATE member SET prenom = :prenom, nom = :nom, age = :age, sexe = :sexe, pseudo = :pseudo,
+				avatar = :avatar, mdp = :mdp, ville = :ville, pays = :pays, adresse = :adresse, email = :email, web = :web, signature = :signature, droit = :droit WHERE id = :id');
+		
 		try{
-			$q->bindValue(':nom', $perso->nom());
-			$q->bindValue(':prenom', $perso->prenom());
-			$q->bindValue(':sexe', $perso->sexe());
-			$q->bindValue(':pseudo', $perso->pseudo());
-			$q->bindValue(':avatar', $perso->avatar());
-			$q->bindValue(':mdp', $perso->mdp());
-			$q->bindValue(':ville', $perso->ville());
-			$q->bindValue(':pays', $perso->pays());
-			$q->bindValue(':adresse', $perso->adresse());
-			$q->bindValue(':email', $perso->email());
-			$q->bindValue(':web', $perso->web());
+			$q->bindValue(':prenom', $perso->prenom(), PDO::PARAM_STR);
+			$q->bindValue(':nom', $perso->nom(), PDO::PARAM_STR);
+			$q->bindValue(':age', $perso->age(), PDO::PARAM_INT);
+			$q->bindValue(':sexe', $perso->sexe(), PDO::PARAM_INT);
+			$q->bindValue(':pseudo', $perso->pseudo(), PDO::PARAM_STR);
+			$q->bindValue(':avatar', $perso->avatar(), PDO::PARAM_STR);
+			$q->bindValue(':mdp', $perso->mdp(), PDO::PARAM_STR);
+			$q->bindValue(':ville', $perso->ville(), PDO::PARAM_STR);
+			$q->bindValue(':pays', $perso->pays(), PDO::PARAM_STR);
+			$q->bindValue(':adresse', $perso->adresse(), PDO::PARAM_STR);
+			$q->bindValue(':email', $perso->email(), PDO::PARAM_STR);
+			$q->bindValue(':web', $perso->web(), PDO::PARAM_STR);
+			$q->bindValue(':signature', $perso->signature(), PDO::PARAM_STR);
 			$q->bindValue(':droit', $perso->droit(), PDO::PARAM_INT);
+			$q->bindValue(':id', $perso->id(), PDO::PARAM_INT);
 			if($q->execute()){
-				$this->_message =  "le membre ". $perso->pseudo() ." à bien été mise à jour.";
+				$this->_message =  "<span class = 'message_valid'>le membre ". $perso->pseudo() ." à bien été mise à jour.</span>";
 			}
 		}
 		catch (Exception $e){
 			$this->_message = "<span class='message_errorH'><img src='./src/image/Error.png' alt='erreur mise à jour' class='img_errorH'>".$e->getMessage()."</span>";
 		}
+		
 	}
 	
 	public function connect($pseudo, $mdp){

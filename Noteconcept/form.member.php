@@ -34,7 +34,7 @@ session_start();
 	?>
 	<form method="POST" action="form.member.php?check=1" enctype="multipart/form-data" id="myForm">
 
-	<fieldset><legend>Identifiants</legend>
+	<fieldset><legend class='legend_form'>Identifiants</legend>
 	<label for="sexe" class='form_col'>* Sexe :</label><select name="sexe">
 	<option value="M">Homme</option>
 	<option value="F">Femme</option>
@@ -69,16 +69,16 @@ session_start();
 		<span class="verif_form"><?php if(isset ($_POST['pays'])&& isset ($_GET['check'])){ echo $membre->setPays($_POST['pays']); }  ?></span><br>
 
 	</fieldset>
-		<fieldset><legend>Contacts</legend>
+		<fieldset><legend class='legend_form'>Contacts</legend>
 		<label for="email" class='form_col'>* Votre adresse Mail :</label><input type="email" name="email"  />
 		<span class="verif_form"><?php if(isset ($_POST['email'])&& isset ($_GET['check'])){ echo $membre->setEmail($_POST['email']); }  ?></span><br>
 		<label for="website" class='form_col'>Votre site web :</label><input type="url" name="website" />
 		<span class="verif_form"><?php if(isset ($_POST['website'])&& isset ($_GET['check'])){ echo $membre->setWeb($_POST['website']); }  ?></span><br>
 		</fieldset>
 	
-		<fieldset><legend>Profil sur le forum</legend>
+		<fieldset><legend class='legend_form'>Profil sur le forum</legend>
 		<label for="avatar" class='form_col'>Choisissez votre avatar :</label><input type="file" name="avatar" id="avatar"  /><br />
-		<span class="verif_form"><?php if( isset ($_GET['check'])){ echo $membre->addAvatar($_FILES); }  ?></span><br>
+		<?php if( isset ($_GET['check'])){ echo"<span class='verif_form'>". $membre->addAvatar($_FILES)."</span>"; }  ?><br>
 		<label for="signature" class='form_col'>Signature :</label><textarea cols="40" rows="4" name="signature" id="signature" >La signature est limit&eacute;e &agrave 200 caract&egrave;res</textarea>
 		<span class="verif_form"><?php if(isset ($_POST['signature'])&& isset ($_GET['check'])){ echo $membre->setSignature($_POST['signature']); }  ?></span><br>
 		</fieldset>

@@ -12,8 +12,10 @@ include('include/use.inc.php');
 <link rel="stylesheet" type="text/css" href="src/css/design.css">
 </head>
 <body>
+<src img="src/image-test/Calendario.psd">
 	<?php
 	include('include/header.inc.php');
+	
 	print_r($_SESSION);
 	?>
 

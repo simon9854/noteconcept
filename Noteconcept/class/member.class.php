@@ -23,6 +23,12 @@ class Member{
 	private $_droit;
 	const REP_AVATAR = "./src/image-avatar/";
 	
+	const  BANNIS = 0000;
+	const VISISTEUR = 0001;
+	const USERS = 0010;
+	const MODERATEUR = 0100;
+	const ADMINISTRATEUR = 1111;
+	
 	/**/
 	public function id(){ return $this->_id;}
 	public function prenom(){return $this->_prenom;}
@@ -40,6 +46,22 @@ class Member{
 	public function email(){return $this->_email;}
 	public function error(){return $this->_error;}
 	public function droit(){return $this->_droit;}
+	
+	public function statutDroit(){
+		if($this->_droit == self::USERS){
+			return "Utilisateur";
+		}
+		if($this->_droit == self::BANNIS){
+			return "Bannis";
+		}
+	
+		if($this->_droit == self::MODERATEUR){
+			return "Moderateur";
+		}
+		if($this->_droit == self::ADMINISTRATEUR){
+			return "Administrateur";
+		}
+	}
 	
 
 	public function hydrate(array $donnees){

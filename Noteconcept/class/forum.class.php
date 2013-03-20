@@ -8,7 +8,7 @@ class Forum{
 	private $_lastPost;
 	private $_nbTopic;
 	private $_nbPost;
-	private $_droit[];
+	
 	
 	public function id(){return $this->_id;}
 	public function idCat(){return $this->_idcat;}

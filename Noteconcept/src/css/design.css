@@ -199,22 +199,32 @@ border:0px;
 }
 
 .message_errorH{
-
-	background:#D10031;
+	background-image:linear-gradient(#DB8B93,  #F03A3A);
+	border-radius:10px;
+	background:#DB8B93;
 	opacity:0.6;
 	border:2px;
 	margin-top:0;
-	padding-top:0;
+	padding-top:0px;
 	padding-left:5px;
 	padding-bottom:8;
 	display:inline-block;
 	width:100%;
-	height:25px;
-	color:#000000;
-	text-align:center; /* alignement du texte */
+	height:40px;
+	color:#870000;
+	font:20px;
 	font-weight:bold; /* text en gras */ 
+	border:2px white solid;
 }
+
  .img_errorH{
+ 	width:30px;
+ 	height:30px;
+ 	padding:2px;
+ 	border-radius:20px;
+ 	border:3px white solid;
+ 	background:black;
+ 	vertical-align:middle;
  	margin-right:8px;
  	
  }
@@ -227,23 +237,20 @@ border:0px;
 	margin-left:10%;
 	color:#F0F7F0;
 	width:900px; 
-	background:#000000;
+	background-image:linear-gradient(#a1d425,  #6fae1a);
+	border-radius:5px 5px 0 0;
 	margin-bottom:0px;
 	border-radius: 10 10 0 0;
  }
 #myForm {
-background:#A7E2A3;
+padding:3px;
+background:#EAF3E9;
 display:block;
 margin-left:10%; 
 width:900px;
+border-radius:0 0 5px 5px;
 }
-/*utilisation du zebra form*/
-#form_zebra{
-	display:block;
-	margin-left:10%; 
-	width:900px;
-	
-}
+
 
 #myForm input{
 -webkit-border-radius: 2px;
@@ -268,6 +275,11 @@ padding: 2px;
 	padding:3px;
 }
 
+.legend_form{
+	color:red;
+	font-weight:bold
+}
+
 .message_error{
 	margin-left:10%;
 	background:#2A3432;
@@ -289,6 +301,22 @@ padding: 2px;
 	display:inline-block;
 }
 
+#myForm input[type=submit], #myForm input[type=reset]{
+		background-image:linear-gradient(#a1d425,  #6fae1a);
+		color:white;
+		border-radius:3px;
+		border-right:#6B8269 solid 2px;
+		border-top:#6B8269 solid 2px;
+		font-size:15px;
+		text-shadow:0 -1px 0 #CCCCCC;
+		
+}
+
+#myForm input[type=submit]:hover, #myForm input[type=reset]:hover{
+	background:black;
+	border-bottom:#6B8269 solid 2px;
+	border-left:#6B8269 solid 2px;
+}
 /*------------------------------------------------------Administration---------------------------------------------------------------*/
 #corpAdmin{
 	
@@ -303,8 +331,10 @@ padding: 2px;
 	/*------------------------------------------------Profil--------------------------------------------------------------------------*/
 	.corpProfil{
 		background:white;
-		margin-left: 180px;
+		margin-left: 220px;
 		width: 80%;
 		
 	}
+	/*-------------------------------------------design de notifiation--------------------------------------------------------*/
+
 	

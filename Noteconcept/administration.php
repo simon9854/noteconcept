@@ -15,7 +15,7 @@ include('include/use.inc.php');
 <body>
 	<?php
 	include('include/header.inc.php');
-	if($perso->droit() == ADMINISTRATEUR){
+	if($perso->droit() == 1111){
 		include("include/menuAdmin.inc.php");
 		echo "<div id='corpAdmin'>
 		Je suis la div du corp de l'administration
